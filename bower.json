@@ -1,0 +1,22 @@
+{
+  "name": "kickitmob",
+  "version": "0.0.0",
+  "authors": [
+    "CSergienko <chris@praekelt.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "susy": "~2.2.2",
+    "breakpoint-sass": "~2.5.0",
+    "modernizr": "~2.8.3",
+    "conditionizr": "~4.5.0",
+    "jquery": "~2.1.3"
+  }
+}
