@@ -1,0 +1,20 @@
+/* IE8 conditional mixin */
+@mixin ie8 {
+  @if $ie8 == 'true' {
+    @content;
+  }
+}
+
+
+/* Theme Conditional Mixins */
+@mixin primary {
+  @if $theme == 'primary' {
+    @content;
+  }
+}
+ 
+@mixin secondary {
+  @if $theme == 'secondary' {
+    @content;
+  }
+}
