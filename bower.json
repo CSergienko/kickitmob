@@ -19,6 +19,7 @@
     "conditionizr": "~4.5.0",
     "jquery": "~2.1.3",
     "normalize.sass": "~2.0.0",
-    "css3-mediaqueries-js": "~1.0.0"
+    "css3-mediaqueries-js": "~1.0.0",
+    "modular-scale": "~2.0.7"
   }
 }

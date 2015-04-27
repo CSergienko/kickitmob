@@ -1,0 +1,35 @@
+@import 'utils/utils';
+
+.sg-section {
+    padding: ms(2);
+    background-color: $grey;
+}
+
+.sg-pattern {
+    background-color: $white;
+    border: 1px solid darken($grey, 15%);
+    padding: $base-padding;
+    margin-bottom: $base-margin;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.sg-section-title,
+.sg-pattern-title {
+    color: $white;
+    padding: $base-padding; 
+}
+
+.sg-section-title {
+    background-color: $blue;
+}
+
+.sg-pattern-title {
+    background-color: $red;
+}
+
+code {
+    color: $blue;
+}

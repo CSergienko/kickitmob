@@ -238,3 +238,62 @@ td,
 th {
   padding: 0;
 }
+
+/* Colors */
+/* Used for iterating over and creating variations with the colors. */
+/* Typography */
+/* Modular Scale */
+/* Font Weights */
+/* Grid */
+/* Core Media Queries */
+/* Reusable Measures */
+/* IE8 conditional mixin */
+/* Theme Conditional Mixins */
+/* Font Mixin */
+/* PX to REM */
+/* line 21, ../../../bower_components/susy/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 3, ../scss/style-guide.scss */
+.sg-section {
+  padding: 1.77778rem;
+  background-color: #e3e3e3;
+}
+
+/* line 8, ../scss/style-guide.scss */
+.sg-pattern {
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  padding: 1.5396rem;
+  margin-bottom: 1.5396rem;
+}
+/* line 14, ../scss/style-guide.scss */
+.sg-pattern:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 19, ../scss/style-guide.scss */
+.sg-section-title,
+.sg-pattern-title {
+  color: #ffffff;
+  padding: 1.5396rem;
+}
+
+/* line 25, ../scss/style-guide.scss */
+.sg-section-title {
+  background-color: #13b9e2;
+}
+
+/* line 29, ../scss/style-guide.scss */
+.sg-pattern-title {
+  background-color: #fe002a;
+}
+
+/* line 33, ../scss/style-guide.scss */
+code {
+  color: #13b9e2;
+}

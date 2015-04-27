@@ -1,0 +1,34 @@
+.button {
+    display: inline-block;
+    @include rem(padding, 10px $base-padding);
+    border: 1px solid transparent;
+    background-color: $black;
+    @include font(ms(-1), 0); 
+    font-weight: $ultralight;
+    color: $white;  
+    text-decoration: none;
+
+    &-block {
+        @extend .button;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    @each $button, $color in $brand-colors {
+        &-#{$button} {
+            @extend .button;
+            background-color: $color;
+
+            &-block {
+                @extend .button-block;
+                @extend .button-#{$button};
+            }
+
+            &:hover {
+                background-color: lighten($color, 5%);
+            }
+        }
+    }
+}
+

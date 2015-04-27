@@ -1,0 +1,66 @@
+/* Colors */
+    $black: #000000;
+    $white: #ffffff;
+    $grey: #e3e3e3;
+    $grey-dark: #27333d;
+    $grey-darker: #262626;
+    $red: #fe002a;
+    $blue: #13b9e2;
+    $lime: #caf902;
+    $purple: #ab18ff;
+    $pink: #ff3ce6;
+    $orange: #ff9517;
+    
+    /* Used for iterating over and creating variations with the colors. */
+    $brand-colors: (
+        "grey": $grey,
+        "grey-dark": $grey-dark,
+        "grey-darker": $grey-darker,
+        "red": $red,
+        "blue": $blue,
+        "lime": $lime,
+        "purple": $purple,
+        "pink": $pink,
+        "orange": $orange
+    );
+
+
+/* Typography */
+    /* Modular Scale */
+    $ms-base: 1rem;
+    $ms-ratio: $fourth;
+    
+    $base-font-family: 'Oxygen', sans-serif;
+    $heading-font-family: 'Slabo 27px', serif;
+    $base-font-weight: 400;
+    $base-font-color: $grey-dark;
+
+    $small-font-size: 14px;
+    $medium-font-size: 16px;
+    $large-font-size: 18px;
+    $xlarge-font-size: 20px;
+
+    /* Font Weights */
+    $ultralight: 300;
+    $regular: 400;
+    $bold: 700;
+
+
+/* Grid */
+    $susy: (
+        columns: 12,
+        gutters: 0.50,
+        math: fluid,
+        output: float,
+        gutter-position: after
+    );
+
+    /* Core Media Queries */
+    $bp-medium: 77.9375rem; //767px
+    $bp-large: 63.9375rem; //1023px
+    $bp-xlarge: 83.4375rem; //1335px
+    
+
+/* Reusable Measures */
+    $base-margin: ms(1.5);
+    $base-padding: ms(1.5);

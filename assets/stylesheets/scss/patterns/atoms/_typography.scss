@@ -1,0 +1,113 @@
+html,
+body {
+    font-family: $base-font-family;
+    color: $base-font-color;
+    
+    /* Font Size Breakpoints */
+    font-size: $small-font-size; // Default
+    @include breakpoint($bp-medium) {
+        font-size: $medium-font-size;
+    }
+    @include breakpoint($bp-large) {
+        font-size: $large-font-size;
+    }
+    @include breakpoint($bp-xlarge) {
+        font-size: $xlarge-font-size;
+    }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+p,
+ul,
+ol {
+    margin-top: $base-margin;
+    margin-bottom: $base-margin;
+}
+
+/* Headings */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: $heading-font-family;
+    color: $grey-darker;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+h1,
+.h1 {
+    @include font(ms(4));
+
+    @include breakpoint($bp-medium) {
+        @include font(ms(5));
+    }
+}
+
+h2,
+.h2 {
+    @include font(ms(3));
+
+    @include breakpoint($bp-medium) {
+        @include font(ms(4));
+    }
+}
+
+
+h3,
+.h3 {
+    @include font(ms(2));
+
+    @include breakpoint($bp-medium) {
+        @include font(ms(3));
+    }
+}
+
+
+h4,
+.h4 {
+    @include font(ms(1.5));
+
+    @include breakpoint($bp-medium) {
+        @include font(ms(2));
+    }
+}
+
+
+h5,
+.h5 {
+    @include font(ms(1));
+
+    @include breakpoint($bp-medium) {
+        @include font(ms(1.5));
+    }
+}
+
+
+h6,
+.h6 {
+    @include font(ms(0.5));
+
+    @include breakpoint($bp-medium) {
+        @include font(ms(1));
+    }
+}
+
+
+/* Inline Elements */
+p,
+li,
+blockquote {
+    line-height: ms(1.5);
+}
+
