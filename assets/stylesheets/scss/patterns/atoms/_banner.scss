@@ -1,0 +1,6 @@
+.banner {
+    @include span(12);
+    @include rem(height, 20rem);
+    position: relative;
+    background-color: $grey;
+}

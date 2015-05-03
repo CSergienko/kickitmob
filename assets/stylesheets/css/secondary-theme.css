@@ -251,6 +251,13 @@ th {
 /* Theme Conditional Mixins */
 /* Font Mixin */
 /* PX to REM */
+/* line 2, ../scss/utils/_extends.scss */
+.no-list, .tags, .social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* line 21, ../../../bower_components/susy/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -313,99 +320,276 @@ h6, .h6 {
   font-family: "Slabo 27px", serif;
   color: #262626;
 }
+/* line 43, ../scss/patterns/atoms/_typography.scss */
+h1:first-child, .h1:first-child,
+h2:first-child, .h2:first-child,
+h3:first-child, .h3:first-child,
+h4:first-child, .h4:first-child,
+h5:first-child, .h5:first-child,
+h6:first-child, .h6:first-child {
+  margin-top: 0;
+}
 
-/* line 44, ../scss/patterns/atoms/_typography.scss */
+/* line 48, ../scss/patterns/atoms/_typography.scss */
 h1,
 .h1 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 3.16049rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   line-height: 3.16049rem;
+  /* 9 */
 }
 @media (min-width: 77.9375rem) {
-  /* line 44, ../scss/patterns/atoms/_typography.scss */
+  /* line 48, ../scss/patterns/atoms/_typography.scss */
   h1,
   .h1 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     font-size: 4.21399rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     line-height: 4.21399rem;
+    /* 9 */
   }
 }
 
-/* line 53, ../scss/patterns/atoms/_typography.scss */
+/* line 57, ../scss/patterns/atoms/_typography.scss */
 h2,
 .h2 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 2.37037rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   line-height: 2.37037rem;
+  /* 9 */
 }
 @media (min-width: 77.9375rem) {
-  /* line 53, ../scss/patterns/atoms/_typography.scss */
+  /* line 57, ../scss/patterns/atoms/_typography.scss */
   h2,
   .h2 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     font-size: 3.16049rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     line-height: 3.16049rem;
+    /* 9 */
   }
 }
 
-/* line 63, ../scss/patterns/atoms/_typography.scss */
+/* line 67, ../scss/patterns/atoms/_typography.scss */
 h3,
 .h3 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 1.77778rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   line-height: 1.77778rem;
+  /* 9 */
 }
 @media (min-width: 77.9375rem) {
-  /* line 63, ../scss/patterns/atoms/_typography.scss */
+  /* line 67, ../scss/patterns/atoms/_typography.scss */
   h3,
   .h3 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     font-size: 2.37037rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     line-height: 2.37037rem;
+    /* 9 */
   }
 }
 
-/* line 73, ../scss/patterns/atoms/_typography.scss */
+/* line 77, ../scss/patterns/atoms/_typography.scss */
 h4,
 .h4 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 1.5396rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   line-height: 1.5396rem;
+  /* 9 */
 }
 @media (min-width: 77.9375rem) {
-  /* line 73, ../scss/patterns/atoms/_typography.scss */
+  /* line 77, ../scss/patterns/atoms/_typography.scss */
   h4,
   .h4 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     font-size: 1.77778rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     line-height: 1.77778rem;
+    /* 9 */
   }
 }
 
-/* line 83, ../scss/patterns/atoms/_typography.scss */
+/* line 87, ../scss/patterns/atoms/_typography.scss */
 h5,
 .h5 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 1.33333rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   line-height: 1.33333rem;
+  /* 9 */
 }
 @media (min-width: 77.9375rem) {
-  /* line 83, ../scss/patterns/atoms/_typography.scss */
+  /* line 87, ../scss/patterns/atoms/_typography.scss */
   h5,
   .h5 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     font-size: 1.5396rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     line-height: 1.5396rem;
+    /* 9 */
   }
 }
 
-/* line 93, ../scss/patterns/atoms/_typography.scss */
+/* line 97, ../scss/patterns/atoms/_typography.scss */
 h6,
 .h6 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 1.1547rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   line-height: 1.1547rem;
+  /* 9 */
 }
 @media (min-width: 77.9375rem) {
-  /* line 93, ../scss/patterns/atoms/_typography.scss */
+  /* line 97, ../scss/patterns/atoms/_typography.scss */
   h6,
   .h6 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     font-size: 1.33333rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
     line-height: 1.33333rem;
+    /* 9 */
   }
 }
 
 /* Inline Elements */
-/* line 104, ../scss/patterns/atoms/_typography.scss */
+/* line 108, ../scss/patterns/atoms/_typography.scss */
 p,
 li,
 blockquote {
@@ -429,8 +613,21 @@ blockquote {
   /* 9 */
   border: 1px solid transparent;
   background-color: #000000;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
   font-size: 0.75rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 8 */
   line-height: 0;
+  /* 9 */
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
@@ -512,4 +709,230 @@ blockquote {
 /* line 28, ../scss/patterns/atoms/_buttons.scss */
 .button-orange:hover, .button-orange-block:hover {
   background-color: #ffa131;
+}
+
+/* line 1, ../scss/patterns/atoms/_images.scss */
+.square-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #4679BD;
+}
+/* line 7, ../scss/patterns/atoms/_images.scss */
+.square-box::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+/* line 13, ../scss/patterns/atoms/_images.scss */
+.square-box .square-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+/* line 21, ../scss/patterns/atoms/_images.scss */
+.square-box .square-content.image {
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 28, ../scss/patterns/atoms/_images.scss */
+.square-box .square-content div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 34, ../scss/patterns/atoms/_images.scss */
+.square-box .square-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+/* line 1, ../scss/patterns/atoms/_banner.scss */
+.banner {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 20rem;
+  /* 9 */
+  position: relative;
+  background-color: #e3e3e3;
+}
+
+/* line 4, ../scss/patterns/atoms/_list-styles.scss */
+.tags li {
+  display: inline-block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-right: 0.2rem;
+  /* 9 */
+}
+/* line 9, ../scss/patterns/atoms/_list-styles.scss */
+.tags .tag {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #13b9e2;
+  border: 1px solid #0d7f9b;
+  border-radius: 5px;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 0.2rem 0.4rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 0.8rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  line-height: 1rem;
+  /* 9 */
+}
+@media (min-width: 77.9375rem) {
+  /* line 9, ../scss/patterns/atoms/_list-styles.scss */
+  .tags .tag {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    font-size: 0.5rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    line-height: 0.7rem;
+    /* 9 */
+  }
+}
+/* line 24, ../scss/patterns/atoms/_list-styles.scss */
+.tags .tag[href]:hover {
+  background-color: #11a6ca;
+}
+/* line 28, ../scss/patterns/atoms/_list-styles.scss */
+.tags .tag:not(a) {
+  cursor: default;
+}
+
+/* line 1, ../scss/patterns/atoms/_social-icons.scss */
+.social {
+  display: table;
+}
+/* line 5, ../scss/patterns/atoms/_social-icons.scss */
+.social li {
+  display: table-cell;
+  vertical-align: middle;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding-right: 1rem;
+  /* 9 */
+}
+/* line 11, ../scss/patterns/atoms/_social-icons.scss */
+.social a {
+  display: block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  width: 1.5rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 1.5rem;
+  /* 9 */
+  background-color: #fe002a;
+}
+
+/* line 1, ../scss/patterns/atoms/_logo.scss */
+.logo {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  width: 8rem;
+  /* 9 */
+  background: #ffffff;
+  display: block;
+}
+
+/* line 1, ../scss/patterns/organisms/_header.scss */
+[role="header"] {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 3rem;
+  /* 9 */
+  position: relative;
+  background-color: #262626;
+}
+/* line 7, ../scss/patterns/organisms/_header.scss */
+[role="header"] .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+/* line 15, ../scss/patterns/organisms/_header.scss */
+[role="header"] .social {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }

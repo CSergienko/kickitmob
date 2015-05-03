@@ -21,8 +21,8 @@
 
 /* Font Mixin */
 @mixin font($font-size, $line-height: $font-size) {
-    font-size: $font-size;
-    line-height: $line-height;
+    @include rem(font-size, $font-size);
+    @include rem(line-height, $line-height);
 }
 
 /* PX to REM */

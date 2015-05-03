@@ -37,6 +37,19 @@
         vertical-align: middle;
         color: white;
     } 
+
+    &-bordered {
+        @extend .square-box;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        background-color: $white;
+        
+        .square-content {
+            border: 1px solid transparent;
+            border-radius: 5px;
+            @include rem(margin, 0.8rem);
+        }
+    }
 }
 
 

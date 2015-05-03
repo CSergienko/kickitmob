@@ -1,0 +1,8 @@
+.logo {
+    @include rem(width, 8rem);
+    background-image: url('http://placehold.it/150x50');
+    background-size: contain;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    display: block;
+}

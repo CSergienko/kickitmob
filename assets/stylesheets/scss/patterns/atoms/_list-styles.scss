@@ -1,0 +1,32 @@
+.tags{
+    @extend .no-list;
+
+    li {
+        display: inline-block;
+        @include rem(margin-right, 0.2rem);
+    }
+
+    .tag {
+        display: block;
+        text-decoration: none;
+        color: $white;
+        background-color: $blue;
+        border: 1px solid darken($blue, 15%);
+        border-radius: 5px;
+        @include rem(padding, 0.2rem 0.4rem);
+
+        @include font(0.8rem, 1rem);
+
+        @include breakpoint($bp-medium) {
+            @include font(0.5rem, 0.7rem);
+        }
+
+        &[href]:hover{
+            background-color: darken($blue, 5%);
+        }
+
+        &:not(a) {
+            cursor: default;
+        }
+    }
+}

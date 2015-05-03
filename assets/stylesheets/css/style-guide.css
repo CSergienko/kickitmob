@@ -251,6 +251,13 @@ th {
 /* Theme Conditional Mixins */
 /* Font Mixin */
 /* PX to REM */
+/* line 2, ../scss/utils/_extends.scss */
+.no-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* line 21, ../../../bower_components/susy/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -260,40 +267,53 @@ th {
 
 /* line 3, ../scss/style-guide.scss */
 .sg-section {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   padding: 1.77778rem;
   background-color: #e3e3e3;
 }
 
-/* line 8, ../scss/style-guide.scss */
+/* line 9, ../scss/style-guide.scss */
 .sg-pattern {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
   background-color: #ffffff;
   border: 1px solid #bdbdbd;
   padding: 1.5396rem;
   margin-bottom: 1.5396rem;
 }
-/* line 14, ../scss/style-guide.scss */
+/* line 17, ../scss/style-guide.scss */
 .sg-pattern:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 19, ../scss/style-guide.scss */
+/* line 22, ../scss/style-guide.scss */
 .sg-section-title,
 .sg-pattern-title {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   color: #ffffff;
   padding: 1.5396rem;
 }
 
-/* line 25, ../scss/style-guide.scss */
+/* line 29, ../scss/style-guide.scss */
 .sg-section-title {
   background-color: #13b9e2;
 }
 
-/* line 29, ../scss/style-guide.scss */
+/* line 33, ../scss/style-guide.scss */
 .sg-pattern-title {
   background-color: #fe002a;
 }
 
-/* line 33, ../scss/style-guide.scss */
+/* line 37, ../scss/style-guide.scss */
 code {
   color: #13b9e2;
 }

@@ -1,0 +1,17 @@
+.social {
+    @extend .no-list;
+    display: table;
+
+    li {
+        display: table-cell;
+        vertical-align: middle;
+        @include rem(padding-right, 1rem);
+    }
+
+    a {
+        display: block;
+        @include rem(width, 1.5rem);
+        @include rem(height, 1.5rem);
+        background-color: $red;
+    }
+}

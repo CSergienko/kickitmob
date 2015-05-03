@@ -1,11 +1,14 @@
 @import 'utils/utils';
 
 .sg-section {
+    @include span(12);
     padding: ms(2);
     background-color: $grey;
 }
 
 .sg-pattern {
+    @include span(12);
+    position: relative;
     background-color: $white;
     border: 1px solid darken($grey, 15%);
     padding: $base-padding;
@@ -18,6 +21,7 @@
 
 .sg-section-title,
 .sg-pattern-title {
+    @include span(12);
     color: $white;
     padding: $base-padding; 
 }
