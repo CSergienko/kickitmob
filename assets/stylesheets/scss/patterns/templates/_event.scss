@@ -1,0 +1,68 @@
+.event {
+    
+    .content {
+        @include span(12);
+    }
+
+    .description {
+        
+        p:first-child {
+            margin-top: 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint((max-width $bp-large)) {
+
+        }
+
+        @include breakpoint($bp-large) {
+            @include span(8);
+        }
+    }
+
+    .details {
+        @include breakpoint((max-width $bp-large)) {
+            @include rem(padding-top, $spacer);
+            @include rem(margin-top, $spacer);
+            border-top: 1px solid $grey-dark;
+        }
+
+        @include breakpoint($bp-large) {
+            @include span(4);
+            @include last;
+            padding-left: gutter();
+            border-left: 1px solid $grey-dark;
+        }
+        
+        .title,
+        p {
+            margin: 0;
+        }
+
+        .detail {
+            @include rem(margin-top, ms(1));
+            @include rem(margin-bottom, ms(1));
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .tags {
+        @include span(12);
+        @include rem(margin-top, ms(1));
+
+        @include breakpoint($bp-large) {
+            @include rem(margin-top, ms(1));
+        }
+    }
+}

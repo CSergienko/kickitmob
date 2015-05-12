@@ -48,6 +48,7 @@ h6, .h6 {
 h1,
 .h1 {
     @include font(ms(4));
+    @include rem(margin-left, -3px); //Adjust alignment to p tag due to font composition.
 
     @include breakpoint($bp-medium) {
         @include font(ms(5));
@@ -57,6 +58,7 @@ h1,
 h2,
 .h2 {
     @include font(ms(3));
+    @include rem(margin-left, -2px);
 
     @include breakpoint($bp-medium) {
         @include font(ms(4));
@@ -67,6 +69,7 @@ h2,
 h3,
 .h3 {
     @include font(ms(2));
+    @include rem(margin-left, -1.5px);
 
     @include breakpoint($bp-medium) {
         @include font(ms(3));
@@ -77,6 +80,7 @@ h3,
 h4,
 .h4 {
     @include font(ms(1.5));
+    @include rem(margin-left, -1px);
 
     @include breakpoint($bp-medium) {
         @include font(ms(2));
@@ -105,6 +109,12 @@ h6,
 
 
 /* Inline Elements */
+p {
+    &.intro {
+        font-weight: $bold;
+    }
+}
+
 p,
 li,
 blockquote {

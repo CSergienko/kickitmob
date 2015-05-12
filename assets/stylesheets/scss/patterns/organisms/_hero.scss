@@ -1,0 +1,34 @@
+.hero {
+    @include span(12);
+    position: relative;
+    @include rem(margin-bottom, $spacer);
+
+    @include breakpoint($bp-medium) {
+        @include rem(margin-bottom, $spacer * 2);
+    }
+
+    .poster {
+        position: absolute;
+        display: block;
+        
+        @include rem(width, 15rem);
+
+        &[href] {
+            text-decoration: none;   
+        }
+        
+        @include breakpoint((max-width $bp-medium)) {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            @include rem(max-height, 15rem);
+            margin: auto;
+        } 
+
+        @include breakpoint($bp-medium) {
+            @include rem(bottom, -($spacer));
+            @include rem(left, $spacer);
+        }
+    }
+}

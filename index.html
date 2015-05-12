@@ -10,6 +10,10 @@
         <!-- build:css assets/stylesheets/css/style.css -->
         <link rel="stylesheet" href="assets/stylesheets/css/primary-theme.css">
         <!-- endbuild -->
+
+        <link rel="stylesheet" href="assets/stylesheets/css/style-guide.css">
+
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300|Slabo+27px' rel='stylesheet' type='text/css'>
         
         <!-- build:js assets/scripts/css3-mediaqueries.min.js -->
         <!--[if lte IE 8]>
@@ -26,13 +30,65 @@
     </head>
     <body>
 
-        <main role="main">
+        <header role="header">
+            <a href="#" class="logo"></a>
+        </header>
+
+        <main role="main" class="event">
+            <section class="hero">
+                <div class="banner" style="background-image: url('assets/images/banner/rock.jpg')"></div>
+                <a href="#the-event-page" class="poster">
+                    <div class='square-box-bordered '>
+                        <div class='square-content' style="background-image: url('assets/images/placeholders/poster-placeholder.jpg');"></div>
+                    </div>
+                </a>
+            </section>
+            <section class="content">
+                <h1>Queens of the Stone Age SA Tour</h1>
+                <div class="description">
+                    <p class="intro">Queens of the Stone Age is an American rock band from Palm Desert, California, United States, formed in 1996.</p>
+                    <p>The band's line-up includes founder Josh Homme (lead vocals, guitar, piano), alongside longtime members Troy Van Leeuwen (guitar, lap steel, keyboard, percussion, backing vocals), Michael Shuman (bass guitar, keyboard, backing vocals), Dean Fertita (keyboards, guitar, percussion, backing vocals), and recent addition Jon Theodore (drums, percussion).</p>
+                </div>
+                <aside class="details">
+                    <div class="detail">
+                        <h3 class="title">Price</h3>
+                        <ul class="no-list">
+                            <li><b>R100</b></li>
+                            <li><b>R200</b> Golden Circle</li>
+                        </ul>
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">When</h3>
+                        <p>Saturday, 29th Nov 2014, 18:00</p>
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Where</h3>
+                        <p>Coca Cola Dome, Johannesburg</p>
+                    </div>
+                </aside>
+                <ul class="tags">
+                        <li>
+                            <a href="#" class="tag">Stoner Rock</a>
+                        </li>
+                        <li>
+                            <a href="#" class="tag">Johannesburg</a>
+                        </li>
+                        <li>
+                            <span class="tag">International</span>
+                        </li>
+                    </ul>
+            </section>
+
+
             
         </main>
+
+        <footer role="contentinfo">
+            
+        </footer>
 
         <!-- build:js assets/scripts/scripts.js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <!-- endbuild -->
-
     </body>
 </html>

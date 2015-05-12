@@ -16,13 +16,9 @@
         left: 0;
         bottom: 0;
         right: 0;
-        color: white;
-
-        &.image {
-            background-position: 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .square-content div {
@@ -47,7 +43,7 @@
         .square-content {
             border: 1px solid transparent;
             border-radius: 5px;
-            @include rem(margin, 0.8rem);
+            @include rem(margin, 0.5rem);
         }
     }
 }

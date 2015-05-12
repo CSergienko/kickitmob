@@ -12,6 +12,9 @@
         display: block;
         @include rem(width, 1.5rem);
         @include rem(height, 1.5rem);
-        background-color: $red;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
+
 }

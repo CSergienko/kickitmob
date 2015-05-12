@@ -10,9 +10,9 @@
         display: block;
         text-decoration: none;
         color: $white;
-        background-color: $blue;
-        border: 1px solid darken($blue, 15%);
-        border-radius: 5px;
+        background-color: $grey-dark;
+        border: 1px solid $grey-darker;
+        border-radius: 3px;
         @include rem(padding, 0.2rem 0.4rem);
 
         @include font(0.8rem, 1rem);
@@ -22,7 +22,7 @@
         }
 
         &[href]:hover{
-            background-color: darken($blue, 5%);
+            background-color: lighten($grey-dark, 10%);
         }
 
         &:not(a) {

@@ -251,6 +251,7 @@ th {
 /* Theme Conditional Mixins */
 /* Font Mixin */
 /* PX to REM */
+/* Retina Image Mixin */
 /* line 2, ../scss/utils/_extends.scss */
 .no-list, .tags, .social {
   list-style: none;
@@ -265,6 +266,25 @@ th {
   box-sizing: border-box;
 }
 
+/* line 3, ../scss/utils/_global.scss */
+[role="main"] {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../bower_components/susy/sass/susy/output/support/_clearfix.scss */
+[role="main"]:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 7, ../scss/utils/_global.scss */
+.content {
+  padding-left: 2.37037rem;
+  padding-right: 2.37037rem;
+}
+
 /* line 1, ../scss/patterns/atoms/_typography.scss */
 html,
 body {
@@ -273,7 +293,7 @@ body {
   /* Font Size Breakpoints */
   font-size: 14px;
 }
-@media (min-width: 77.9375rem) {
+@media (min-width: 47.9375rem) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
@@ -339,6 +359,8 @@ h1,
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 50.5679px;
+  /* 9 */
   font-size: 3.16049rem;
   /* 9 */
   /* 3 */
@@ -347,10 +369,22 @@ h1,
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 50.5679px;
+  /* 9 */
   line-height: 3.16049rem;
   /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-left: -3px;
+  /* 9 */
+  margin-left: -0.1875rem;
+  /* 9 */
 }
-@media (min-width: 77.9375rem) {
+@media (min-width: 47.9375rem) {
   /* line 48, ../scss/patterns/atoms/_typography.scss */
   h1,
   .h1 {
@@ -360,6 +394,8 @@ h1,
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 67.42387px;
+    /* 9 */
     font-size: 4.21399rem;
     /* 9 */
     /* 3 */
@@ -368,12 +404,14 @@ h1,
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 67.42387px;
+    /* 9 */
     line-height: 4.21399rem;
     /* 9 */
   }
 }
 
-/* line 57, ../scss/patterns/atoms/_typography.scss */
+/* line 58, ../scss/patterns/atoms/_typography.scss */
 h2,
 .h2 {
   /* 3 */
@@ -382,6 +420,8 @@ h2,
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 37.92593px;
+  /* 9 */
   font-size: 2.37037rem;
   /* 9 */
   /* 3 */
@@ -390,11 +430,23 @@ h2,
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 37.92593px;
+  /* 9 */
   line-height: 2.37037rem;
   /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-left: -2px;
+  /* 9 */
+  margin-left: -0.125rem;
+  /* 9 */
 }
-@media (min-width: 77.9375rem) {
-  /* line 57, ../scss/patterns/atoms/_typography.scss */
+@media (min-width: 47.9375rem) {
+  /* line 58, ../scss/patterns/atoms/_typography.scss */
   h2,
   .h2 {
     /* 3 */
@@ -403,6 +455,8 @@ h2,
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 50.5679px;
+    /* 9 */
     font-size: 3.16049rem;
     /* 9 */
     /* 3 */
@@ -411,12 +465,14 @@ h2,
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 50.5679px;
+    /* 9 */
     line-height: 3.16049rem;
     /* 9 */
   }
 }
 
-/* line 67, ../scss/patterns/atoms/_typography.scss */
+/* line 69, ../scss/patterns/atoms/_typography.scss */
 h3,
 .h3 {
   /* 3 */
@@ -425,6 +481,8 @@ h3,
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 28.44444px;
+  /* 9 */
   font-size: 1.77778rem;
   /* 9 */
   /* 3 */
@@ -433,11 +491,23 @@ h3,
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 28.44444px;
+  /* 9 */
   line-height: 1.77778rem;
   /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-left: -1.5px;
+  /* 9 */
+  margin-left: -0.09375rem;
+  /* 9 */
 }
-@media (min-width: 77.9375rem) {
-  /* line 67, ../scss/patterns/atoms/_typography.scss */
+@media (min-width: 47.9375rem) {
+  /* line 69, ../scss/patterns/atoms/_typography.scss */
   h3,
   .h3 {
     /* 3 */
@@ -446,6 +516,8 @@ h3,
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 37.92593px;
+    /* 9 */
     font-size: 2.37037rem;
     /* 9 */
     /* 3 */
@@ -454,12 +526,14 @@ h3,
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 37.92593px;
+    /* 9 */
     line-height: 2.37037rem;
     /* 9 */
   }
 }
 
-/* line 77, ../scss/patterns/atoms/_typography.scss */
+/* line 80, ../scss/patterns/atoms/_typography.scss */
 h4,
 .h4 {
   /* 3 */
@@ -468,6 +542,8 @@ h4,
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 24.63361px;
+  /* 9 */
   font-size: 1.5396rem;
   /* 9 */
   /* 3 */
@@ -476,11 +552,23 @@ h4,
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 24.63361px;
+  /* 9 */
   line-height: 1.5396rem;
   /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-left: -1px;
+  /* 9 */
+  margin-left: -0.0625rem;
+  /* 9 */
 }
-@media (min-width: 77.9375rem) {
-  /* line 77, ../scss/patterns/atoms/_typography.scss */
+@media (min-width: 47.9375rem) {
+  /* line 80, ../scss/patterns/atoms/_typography.scss */
   h4,
   .h4 {
     /* 3 */
@@ -489,6 +577,8 @@ h4,
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 28.44444px;
+    /* 9 */
     font-size: 1.77778rem;
     /* 9 */
     /* 3 */
@@ -497,12 +587,14 @@ h4,
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 28.44444px;
+    /* 9 */
     line-height: 1.77778rem;
     /* 9 */
   }
 }
 
-/* line 87, ../scss/patterns/atoms/_typography.scss */
+/* line 91, ../scss/patterns/atoms/_typography.scss */
 h5,
 .h5 {
   /* 3 */
@@ -511,6 +603,8 @@ h5,
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 21.33333px;
+  /* 9 */
   font-size: 1.33333rem;
   /* 9 */
   /* 3 */
@@ -519,11 +613,13 @@ h5,
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 21.33333px;
+  /* 9 */
   line-height: 1.33333rem;
   /* 9 */
 }
-@media (min-width: 77.9375rem) {
-  /* line 87, ../scss/patterns/atoms/_typography.scss */
+@media (min-width: 47.9375rem) {
+  /* line 91, ../scss/patterns/atoms/_typography.scss */
   h5,
   .h5 {
     /* 3 */
@@ -532,6 +628,8 @@ h5,
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 24.63361px;
+    /* 9 */
     font-size: 1.5396rem;
     /* 9 */
     /* 3 */
@@ -540,12 +638,14 @@ h5,
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 24.63361px;
+    /* 9 */
     line-height: 1.5396rem;
     /* 9 */
   }
 }
 
-/* line 97, ../scss/patterns/atoms/_typography.scss */
+/* line 101, ../scss/patterns/atoms/_typography.scss */
 h6,
 .h6 {
   /* 3 */
@@ -554,6 +654,8 @@ h6,
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 18.47521px;
+  /* 9 */
   font-size: 1.1547rem;
   /* 9 */
   /* 3 */
@@ -562,11 +664,13 @@ h6,
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 18.47521px;
+  /* 9 */
   line-height: 1.1547rem;
   /* 9 */
 }
-@media (min-width: 77.9375rem) {
-  /* line 97, ../scss/patterns/atoms/_typography.scss */
+@media (min-width: 47.9375rem) {
+  /* line 101, ../scss/patterns/atoms/_typography.scss */
   h6,
   .h6 {
     /* 3 */
@@ -575,6 +679,8 @@ h6,
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 21.33333px;
+    /* 9 */
     font-size: 1.33333rem;
     /* 9 */
     /* 3 */
@@ -583,20 +689,27 @@ h6,
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 21.33333px;
+    /* 9 */
     line-height: 1.33333rem;
     /* 9 */
   }
 }
 
 /* Inline Elements */
-/* line 108, ../scss/patterns/atoms/_typography.scss */
+/* line 113, ../scss/patterns/atoms/_typography.scss */
+p.intro {
+  font-weight: 700;
+}
+
+/* line 118, ../scss/patterns/atoms/_typography.scss */
 p,
 li,
 blockquote {
   line-height: 1.5396rem;
 }
 
-/* line 114, ../scss/patterns/atoms/_typography.scss */
+/* line 124, ../scss/patterns/atoms/_typography.scss */
 ul,
 ol {
   /* 3 */
@@ -605,6 +718,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  padding-left: 19.2px;
+  /* 9 */
   padding-left: 1.2rem;
   /* 9 */
 }
@@ -622,7 +737,9 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
-  padding: 1rem 1.5396rem;
+  padding: 10px 24.63361px;
+  /* 9 */
+  padding: 0.625rem 1.5396rem;
   /* 9 */
   border: 1px solid transparent;
   background-color: #000000;
@@ -632,6 +749,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 12.0px;
+  /* 9 */
   font-size: 0.75rem;
   /* 9 */
   /* 3 */
@@ -744,34 +863,30 @@ ol {
   left: 0;
   bottom: 0;
   right: 0;
-  color: white;
-}
-/* line 21, ../scss/patterns/atoms/_images.scss */
-.square-box .square-content.image, .square-box-bordered .square-content.image {
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 28, ../scss/patterns/atoms/_images.scss */
+/* line 24, ../scss/patterns/atoms/_images.scss */
 .square-box .square-content div, .square-box-bordered .square-content div {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 34, ../scss/patterns/atoms/_images.scss */
+/* line 30, ../scss/patterns/atoms/_images.scss */
 .square-box .square-content span, .square-box-bordered .square-content span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   color: white;
 }
-/* line 41, ../scss/patterns/atoms/_images.scss */
+/* line 37, ../scss/patterns/atoms/_images.scss */
 .square-box-bordered {
   border: 1px solid #e3e3e3;
   border-radius: 5px;
   background-color: #ffffff;
 }
-/* line 47, ../scss/patterns/atoms/_images.scss */
+/* line 43, ../scss/patterns/atoms/_images.scss */
 .square-box-bordered .square-content {
   border: 1px solid transparent;
   border-radius: 5px;
@@ -781,7 +896,9 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin: 0.8rem;
+  margin: 8px;
+  /* 9 */
+  margin: 0.5rem;
   /* 9 */
 }
 
@@ -797,10 +914,15 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  height: 320px;
+  /* 9 */
   height: 20rem;
   /* 9 */
   position: relative;
   background-color: #e3e3e3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 /* line 4, ../scss/patterns/atoms/_list-styles.scss */
@@ -812,6 +934,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  margin-right: 3.2px;
+  /* 9 */
   margin-right: 0.2rem;
   /* 9 */
 }
@@ -820,9 +944,9 @@ ol {
   display: block;
   text-decoration: none;
   color: #ffffff;
-  background-color: #13b9e2;
-  border: 1px solid #0d7f9b;
-  border-radius: 5px;
+  background-color: #27333d;
+  border: 1px solid #262626;
+  border-radius: 3px;
   /* 3 */
   /* 3 */
   /* 4 */
@@ -833,6 +957,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  padding: 3.2px 6.4px;
+  /* 9 */
   padding: 0.2rem 0.4rem;
   /* 9 */
   /* 3 */
@@ -841,6 +967,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  font-size: 12.8px;
+  /* 9 */
   font-size: 0.8rem;
   /* 9 */
   /* 3 */
@@ -849,10 +977,12 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  line-height: 16px;
+  /* 9 */
   line-height: 1rem;
   /* 9 */
 }
-@media (min-width: 77.9375rem) {
+@media (min-width: 47.9375rem) {
   /* line 9, ../scss/patterns/atoms/_list-styles.scss */
   .tags .tag {
     /* 3 */
@@ -861,6 +991,8 @@ ol {
     /* 6 */
     /* 6 */
     /* 7 */
+    font-size: 8px;
+    /* 9 */
     font-size: 0.5rem;
     /* 9 */
     /* 3 */
@@ -869,13 +1001,15 @@ ol {
     /* 6 */
     /* 6 */
     /* 7 */
+    line-height: 11.2px;
+    /* 9 */
     line-height: 0.7rem;
     /* 9 */
   }
 }
 /* line 24, ../scss/patterns/atoms/_list-styles.scss */
 .tags .tag[href]:hover {
-  background-color: #11a6ca;
+  background-color: #3b4d5c;
 }
 /* line 28, ../scss/patterns/atoms/_list-styles.scss */
 .tags .tag:not(a) {
@@ -896,6 +1030,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  padding-right: 16px;
+  /* 9 */
   padding-right: 1rem;
   /* 9 */
 }
@@ -908,6 +1044,8 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  width: 24px;
+  /* 9 */
   width: 1.5rem;
   /* 9 */
   /* 3 */
@@ -916,9 +1054,13 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  height: 24px;
+  /* 9 */
   height: 1.5rem;
   /* 9 */
-  background-color: #fe002a;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 /* line 1, ../scss/patterns/atoms/_logo.scss */
@@ -929,13 +1071,22 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
+  width: 128px;
+  /* 9 */
   width: 8rem;
   /* 9 */
-  background-image: url("http://placehold.it/150x50");
   background-size: contain;
   background-position: 0% 50%;
   background-repeat: no-repeat;
   display: block;
+  background-image: url("../../images/logo-light.png");
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 1, ../scss/patterns/atoms/_logo.scss */
+  .logo {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../../images/logo-light@2.png");
+  }
 }
 
 /* line 1, ../scss/patterns/organisms/_header.scss */
@@ -950,7 +1101,9 @@ ol {
   /* 6 */
   /* 6 */
   /* 7 */
-  height: 3rem;
+  height: 50.5679px;
+  /* 9 */
+  height: 3.16049rem;
   /* 9 */
   position: relative;
   background-color: #262626;
@@ -958,16 +1111,259 @@ ol {
 /* line 7, ../scss/patterns/organisms/_header.scss */
 [role="header"] .logo {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 1rem;
 }
-/* line 15, ../scss/patterns/organisms/_header.scss */
+/* line 14, ../scss/patterns/organisms/_header.scss */
 [role="header"] .social {
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+/* line 1, ../scss/patterns/organisms/_footer.scss */
+footer {
+  height: 20rem;
+  background-color: #262626;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 37.92593px;
+  /* 9 */
+  margin-top: 2.37037rem;
+  /* 9 */
+}
+
+/* line 1, ../scss/patterns/organisms/_hero.scss */
+.hero {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 37.92593px;
+  /* 9 */
+  margin-bottom: 2.37037rem;
+  /* 9 */
+}
+@media (min-width: 47.9375rem) {
+  /* line 1, ../scss/patterns/organisms/_hero.scss */
+  .hero {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-bottom: 75.85185px;
+    /* 9 */
+    margin-bottom: 4.74074rem;
+    /* 9 */
+  }
+}
+/* line 10, ../scss/patterns/organisms/_hero.scss */
+.hero .poster {
+  position: absolute;
+  display: block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  width: 240px;
+  /* 9 */
+  width: 15rem;
+  /* 9 */
+}
+/* line 16, ../scss/patterns/organisms/_hero.scss */
+.hero .poster[href] {
+  text-decoration: none;
+}
+@media (max-width: 47.9375rem) {
+  /* line 10, ../scss/patterns/organisms/_hero.scss */
+  .hero .poster {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    max-height: 240px;
+    /* 9 */
+    max-height: 15rem;
+    /* 9 */
+    margin: auto;
+  }
+}
+@media (min-width: 47.9375rem) {
+  /* line 10, ../scss/patterns/organisms/_hero.scss */
+  .hero .poster {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    bottom: -37.92593px;
+    /* 9 */
+    bottom: -2.37037rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    left: 37.92593px;
+    /* 9 */
+    left: 2.37037rem;
+    /* 9 */
+  }
+}
+
+/* line 3, ../scss/patterns/templates/_event.scss */
+.event .content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 9, ../scss/patterns/templates/_event.scss */
+.event .description p:first-child {
+  margin-top: 0;
+}
+/* line 13, ../scss/patterns/templates/_event.scss */
+.event .description p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 63.9375rem) {
+  /* line 7, ../scss/patterns/templates/_event.scss */
+  .event .description {
+    width: 65.71429%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+}
+@media (max-width: 63.9375rem) {
+  /* line 26, ../scss/patterns/templates/_event.scss */
+  .event .details {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-top: 37.92593px;
+    /* 9 */
+    padding-top: 2.37037rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-top: 37.92593px;
+    /* 9 */
+    margin-top: 2.37037rem;
+    /* 9 */
+    border-top: 1px solid #27333d;
+  }
+}
+@media (min-width: 63.9375rem) {
+  /* line 26, ../scss/patterns/templates/_event.scss */
+  .event .details {
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+    float: right;
+    margin-right: 0;
+    padding-left: 2.85714%;
+    border-left: 1px solid #27333d;
+  }
+}
+/* line 40, ../scss/patterns/templates/_event.scss */
+.event .details .title,
+.event .details p {
+  margin: 0;
+}
+/* line 45, ../scss/patterns/templates/_event.scss */
+.event .details .detail {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 21.33333px;
+  /* 9 */
+  margin-top: 1.33333rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 21.33333px;
+  /* 9 */
+  margin-bottom: 1.33333rem;
+  /* 9 */
+}
+/* line 49, ../scss/patterns/templates/_event.scss */
+.event .details .detail:first-child {
+  margin-top: 0;
+}
+/* line 53, ../scss/patterns/templates/_event.scss */
+.event .details .detail:last-child {
+  margin-bottom: 0;
+}
+/* line 60, ../scss/patterns/templates/_event.scss */
+.event .tags {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 21.33333px;
+  /* 9 */
+  margin-top: 1.33333rem;
+  /* 9 */
+}
+@media (min-width: 63.9375rem) {
+  /* line 60, ../scss/patterns/templates/_event.scss */
+  .event .tags {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-top: 21.33333px;
+    /* 9 */
+    margin-top: 1.33333rem;
+    /* 9 */
+  }
 }
