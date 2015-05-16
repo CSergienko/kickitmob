@@ -2,35 +2,20 @@
     
     .content {
         @include span(12);
-    }
-
-    .description {
-        
-        p:first-child {
-            margin-top: 0;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        @include breakpoint((max-width $bp-large)) {
-
-        }
-
-        @include breakpoint($bp-large) {
-            @include span(8);
-        }
+        position: relative;
     }
 
     .details {
-        @include breakpoint((max-width $bp-large)) {
+        @include breakpoint((max-width $bp-medium)) {
             @include rem(padding-top, $spacer);
+            @include rem(padding-bottom, $spacer);
             @include rem(margin-top, $spacer);
+            @include rem(margin-bottom, $spacer);
             border-top: 1px solid $grey-dark;
+            border-bottom: 1px solid $grey-dark;
         }
 
-        @include breakpoint($bp-large) {
+        @include breakpoint($bp-medium) {
             @include span(4);
             @include last;
             padding-left: gutter();
@@ -43,6 +28,14 @@
         }
 
         .detail {
+
+            &[class*="icon-"] {
+                @include rem(padding-left, ($spacer * 1.5));
+                @include rem(background-size, $spacer);
+                @include rem(background-position-x, 0.65rem);
+                background-position-y: 0%;
+            }
+
             @include rem(margin-top, ms(1));
             @include rem(margin-bottom, ms(1));
 
@@ -57,12 +50,44 @@
 
     }
 
+    .description {
+        
+        p:first-child {
+            margin-top: 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint($bp-medium) {
+            @include span(8);
+        }
+    }
+
     .tags {
         @include span(12);
         @include rem(margin-top, ms(1));
 
         @include breakpoint($bp-large) {
             @include rem(margin-top, ms(1));
+        }
+    }
+
+    .button-group {
+        @include breakpoint((max-width $bp-medium)) {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        @include breakpoint($bp-medium) {
+            position: absolute;
+            @include rem(top, -6.19rem);
+            right: $spacer;
+            width: span(6);
         }
     }
 }

@@ -1,18 +1,25 @@
 .button {
     display: inline-block;
-    @include rem(padding, 10px $base-padding);
     border: 1px solid transparent;
     background-color: $black;
     @include font(ms(-1), 0); 
     font-weight: $ultralight;
     color: $white;  
     text-decoration: none;
+    @include rem(padding, ($base-padding * 0.9) $base-padding ($base-padding * 0.85) $base-padding);
 
     &-block {
         @extend .button;
         display: block;
         text-align: center;
         width: 100%;
+    }
+
+    &[class*="icon-"] {
+        @include rem(padding-left, ($spacer * 1.5));
+        @include rem(background-size, ($spacer * 0.6));
+        @include rem(background-position-x, $spacer * 0.5);
+        background-position-y: 50%;
     }
 
     @each $button, $color in $brand-colors {
@@ -29,6 +36,19 @@
                 background-color: lighten($color, 5%);
             }
         }
+    }
+}
+
+.button-group {
+    display: table;
+    table-layout: fixed;
+
+    &-row {
+        display: table-row;
+    }
+
+    .button {
+        display: table-cell;
     }
 }
 

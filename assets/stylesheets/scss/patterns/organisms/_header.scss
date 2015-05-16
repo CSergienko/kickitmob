@@ -6,9 +6,9 @@
 
     .logo {
         position: absolute;
-        top: 0.5rem;
-        bottom: 0.5rem;
-        left: 1rem;
+        @include rem(top, 0.5rem);
+        @include rem(bottom, 0.5rem);
+        @include rem(left, 1rem);
     }
 
     .social {
@@ -17,5 +17,23 @@
         top: 0;
         right: 0;
         bottom: 0;
+    }
+
+    [role="nav"] {
+        position: absolute;
+        top: 0;
+        @include rem(right, 1rem);
+        bottom: 0;
+        height: 100%;
+        width: span(6);
+        
+        .download-app {
+            display: block;
+            background-size: contain;
+            background-position: 50%;
+            height: 100%;
+            @include rem(width, 6rem);
+            @include last;
+        }
     }
 }

@@ -14,6 +14,12 @@
         <link rel="stylesheet" href="assets/stylesheets/css/style-guide.css">
 
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300|Slabo+27px' rel='stylesheet' type='text/css'>
+    <script>
+        /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+        window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+        grunticon( [ "assets/stylesheets/css/utils/iconify/icons.svg.css", "assets/css/utils/stylesheets/css/iconify/icons.png.css", "assets/stylesheets/css/utils/css/iconify/icons.fallback.css" ] );
+    </script>
+    <noscript><link href="{{ STATIC_URL }}css/iconify/icons.png.css" rel="stylesheet"></noscript>
         
         <!-- build:js assets/scripts/css3-mediaqueries.min.js -->
         <!--[if lte IE 8]>
@@ -32,6 +38,9 @@
 
         <header role="header">
             <a href="#" class="logo"></a>
+            <nav role="nav">
+                <a href="#" class="download-app icon-store-google-play"></a>
+            </nav>
         </header>
 
         <main role="main" class="event">
@@ -44,29 +53,39 @@
                 </a>
             </section>
             <section class="content">
+                <nav class="button-group event-links" role="nav">
+                    <div class="button-group-row">
+                        <a href="#" class="button-blue icon-ticket-white" id="buy-ticket">
+                            Buy Ticket
+                        </a>
+                        <a href="#" class="button-grey-dark icon-link-white" id="event-link">
+                            Event Link
+                        </a>
+                    </div>
+                </nav>
                 <h1>Queens of the Stone Age SA Tour</h1>
-                <div class="description">
-                    <p class="intro">Queens of the Stone Age is an American rock band from Palm Desert, California, United States, formed in 1996.</p>
-                    <p>The band's line-up includes founder Josh Homme (lead vocals, guitar, piano), alongside longtime members Troy Van Leeuwen (guitar, lap steel, keyboard, percussion, backing vocals), Michael Shuman (bass guitar, keyboard, backing vocals), Dean Fertita (keyboards, guitar, percussion, backing vocals), and recent addition Jon Theodore (drums, percussion).</p>
-                </div>
                 <aside class="details">
-                    <div class="detail">
-                        <h3 class="title">Price</h3>
+                    <div class="detail icon-dollar-grey-dark">
+                        <h4 class="title">Price</h4>
                         <ul class="no-list">
                             <li><b>R100</b></li>
                             <li><b>R200</b> Golden Circle</li>
                         </ul>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">When</h3>
+                    <div class="detail icon-calendar-grey-dark">
+                        <h4 class="title">When</h4>
                         <p>Saturday, 29th Nov 2014, 18:00</p>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">Where</h3>
+                    <div class="detail icon-location-grey-dark">
+                        <h4 class="title">Where</h4>
                         <p>Coca Cola Dome, Johannesburg</p>
                     </div>
                 </aside>
-                <ul class="tags">
+                <div class="description">
+                    <p class="intro">Queens of the Stone Age is an American rock band from Palm Desert, California, United States, formed in 1996.</p>
+                    <p>The band's line-up includes founder Josh Homme (lead vocals, guitar, piano), alongside longtime members Troy Van Leeuwen (guitar, lap steel, keyboard, percussion, backing vocals), Michael Shuman (bass guitar, keyboard, backing vocals), Dean Fertita (keyboards, guitar, percussion, backing vocals), and recent addition Jon Theodore (drums, percussion).</p>
+
+                    <ul class="tags">
                         <li>
                             <a href="#" class="tag">Stoner Rock</a>
                         </li>
@@ -77,6 +96,7 @@
                             <span class="tag">International</span>
                         </li>
                     </ul>
+                </div>
             </section>
 
 
