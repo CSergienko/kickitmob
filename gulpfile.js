@@ -32,16 +32,7 @@ gulp.task('default', function() {
 
 
 gulp.task('default', function() {
-    var assets = useref.assets();
     
-    return gulp.src('*.html')
-        .pipe(plumber())
-        .pipe(assets)
-        .pipe(gulpif('*.js', uglify()))
-        .pipe(gulpif('*.css', minifyCss()))
-        .pipe(assets.restore())
-        .pipe(useref())
-        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('iconify', function() {

@@ -1163,8 +1163,9 @@ ol {
   /* 9 */
   position: relative;
   background-color: #262626;
+  z-index: 20;
 }
-/* line 7, ../scss/patterns/organisms/_header.scss */
+/* line 8, ../scss/patterns/organisms/_header.scss */
 [role="header"] .logo {
   position: absolute;
   /* 3 */
@@ -1198,7 +1199,7 @@ ol {
   left: 1rem;
   /* 9 */
 }
-/* line 14, ../scss/patterns/organisms/_header.scss */
+/* line 15, ../scss/patterns/organisms/_header.scss */
 [role="header"] .social {
   height: 100%;
   position: absolute;
@@ -1206,7 +1207,7 @@ ol {
   right: 0;
   bottom: 0;
 }
-/* line 22, ../scss/patterns/organisms/_header.scss */
+/* line 23, ../scss/patterns/organisms/_header.scss */
 [role="header"] [role="nav"] {
   position: absolute;
   top: 0;
@@ -1224,7 +1225,7 @@ ol {
   height: 100%;
   width: 48.57143%;
 }
-/* line 30, ../scss/patterns/organisms/_header.scss */
+/* line 31, ../scss/patterns/organisms/_header.scss */
 [role="header"] [role="nav"] .download-app {
   display: block;
   background-size: contain;
@@ -1246,6 +1247,7 @@ ol {
 
 /* line 1, ../scss/patterns/organisms/_footer.scss */
 footer {
+  position: relative;
   height: 20rem;
   background-color: #262626;
   /* 3 */
@@ -1257,6 +1259,31 @@ footer {
   margin-top: 37.92593px;
   /* 9 */
   margin-top: 2.37037rem;
+  /* 9 */
+  color: #ffffff;
+}
+/* line 8, ../scss/patterns/organisms/_footer.scss */
+footer .copyright {
+  position: absolute;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  bottom: 16px;
+  /* 9 */
+  bottom: 1rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  right: 37.92593px;
+  /* 9 */
+  right: 2.37037rem;
   /* 9 */
 }
 
@@ -1495,12 +1522,19 @@ footer {
 .event .details .detail:last-child {
   margin-bottom: 0;
 }
-/* line 55, ../scss/patterns/templates/_event.scss */
-.event .description p:first-child {
+/* line 53, ../scss/patterns/templates/_event.scss */
+.event .description {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 56, ../scss/patterns/templates/_event.scss */
+.event .description p:first-of-type {
   margin-top: 0;
 }
-/* line 59, ../scss/patterns/templates/_event.scss */
-.event .description p:last-child {
+/* line 60, ../scss/patterns/templates/_event.scss */
+.event .description p:last-of-type {
   margin-bottom: 0;
 }
 @media (min-width: 47.9375rem) {
@@ -1511,7 +1545,7 @@ footer {
     margin-right: 2.85714%;
   }
 }
-/* line 68, ../scss/patterns/templates/_event.scss */
+/* line 69, ../scss/patterns/templates/_event.scss */
 .event .tags {
   width: 100%;
   float: left;
@@ -1523,13 +1557,13 @@ footer {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin-top: 21.33333px;
+  margin-top: 37.92593px;
   /* 9 */
-  margin-top: 1.33333rem;
+  margin-top: 2.37037rem;
   /* 9 */
 }
 @media (min-width: 63.9375rem) {
-  /* line 68, ../scss/patterns/templates/_event.scss */
+  /* line 69, ../scss/patterns/templates/_event.scss */
   .event .tags {
     /* 3 */
     /* 3 */
@@ -1544,18 +1578,27 @@ footer {
   }
 }
 @media (max-width: 47.9375rem) {
-  /* line 77, ../scss/patterns/templates/_event.scss */
-  .event .button-group {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  /* line 78, ../scss/patterns/templates/_event.scss */
+  .event .event-links {
     width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-top: 37.92593px;
+    /* 9 */
+    margin-top: 2.37037rem;
+    /* 9 */
   }
 }
 @media (min-width: 47.9375rem) {
-  /* line 77, ../scss/patterns/templates/_event.scss */
-  .event .button-group {
+  /* line 78, ../scss/patterns/templates/_event.scss */
+  .event .event-links {
     position: absolute;
     /* 3 */
     /* 3 */

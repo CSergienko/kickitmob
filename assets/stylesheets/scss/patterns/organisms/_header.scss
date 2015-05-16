@@ -3,6 +3,7 @@
     @include rem(height, ms(4));
     position: relative;
     background-color: $grey-darker;
+    z-index: 20;
 
     .logo {
         position: absolute;

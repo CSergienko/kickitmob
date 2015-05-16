@@ -51,12 +51,13 @@
     }
 
     .description {
+        @include span(12);
         
-        p:first-child {
+        p:first-of-type {
             margin-top: 0;
         }
 
-        p:last-child {
+        p:last-of-type {
             margin-bottom: 0;
         }
 
@@ -67,20 +68,18 @@
 
     .tags {
         @include span(12);
-        @include rem(margin-top, ms(1));
+        @include rem(margin-top, $spacer);
 
         @include breakpoint($bp-large) {
             @include rem(margin-top, ms(1));
         }
     }
 
-    .button-group {
+    .event-links {
         @include breakpoint((max-width $bp-medium)) {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
+
+            @include span(12);
+            @include rem(margin-top, $spacer);
         }
 
         @include breakpoint($bp-medium) {
@@ -89,5 +88,6 @@
             right: $spacer;
             width: span(6);
         }
+
     }
 }

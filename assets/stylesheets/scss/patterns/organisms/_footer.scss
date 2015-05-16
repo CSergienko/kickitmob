@@ -1,5 +1,13 @@
 footer {
+    position: relative;
     height: 20rem;
     background-color: $grey-darker;
     @include rem(margin-top, $spacer);
+    color: $white;
+
+    .copyright {
+        position: absolute;
+        @include rem(bottom, 1rem);
+        @include rem(right, $spacer);
+    }
 }

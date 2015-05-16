@@ -7,34 +7,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- build:css assets/stylesheets/css/style.css -->
         <link rel="stylesheet" href="assets/stylesheets/css/primary-theme.css">
-        <!-- endbuild -->
-
-        <link rel="stylesheet" href="assets/stylesheets/css/style-guide.css">
 
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300|Slabo+27px' rel='stylesheet' type='text/css'>
-    <script>
-        /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
-        window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
-        grunticon( [ "assets/stylesheets/css/utils/iconify/icons.svg.css", "assets/css/utils/stylesheets/css/iconify/icons.png.css", "assets/stylesheets/css/utils/css/iconify/icons.fallback.css" ] );
-    </script>
-    <noscript><link href="{{ STATIC_URL }}css/iconify/icons.png.css" rel="stylesheet"></noscript>
+
+        <script>
+            /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+            window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+            grunticon( [ "assets/stylesheets/css/utils/iconify/icons.svg.css", "assets/css/utils/stylesheets/css/iconify/icons.png.css", "assets/stylesheets/css/utils/css/iconify/icons.fallback.css" ] );
+        </script>
+        <noscript><link href="{{ STATIC_URL }}css/iconify/icons.png.css" rel="stylesheet"></noscript>
         
-        <!-- build:js assets/scripts/css3-mediaqueries.min.js -->
-        <!--[if lte IE 8]>
-        <script src="/bower_components/css3-mediaqueries-js/css3-mediaqueries.js"></script>
-        <![endif]-->
-        <!-- endbuild -->
-        <!-- build:js assets/scripts/modernizr.min.js -->
-        <script src="/bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-        <!-- build:js assets/scripts/conditionizr.min.js -->
-        <script src="/bower_components/conditionizr/dist/conditionizr.js"></script>
-        <!-- endbuild -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/4.1.0/conditionizr.min.js"></script>
         
     </head>
     <body>
+
 
         <header role="header">
             <a href="#" class="logo"></a>
@@ -44,6 +33,7 @@
         </header>
 
         <main role="main" class="event">
+
             <section class="hero">
                 <div class="banner" style="background-image: url('assets/images/banner/rock.jpg')"></div>
                 <a href="#the-event-page" class="poster">
@@ -52,17 +42,8 @@
                     </div>
                 </a>
             </section>
+
             <section class="content">
-                <nav class="button-group event-links" role="nav">
-                    <div class="button-group-row">
-                        <a href="#" class="button-blue icon-ticket-white" id="buy-ticket">
-                            Buy Ticket
-                        </a>
-                        <a href="#" class="button-grey-dark icon-link-white" id="event-link">
-                            Event Link
-                        </a>
-                    </div>
-                </nav>
                 <h1>Queens of the Stone Age SA Tour</h1>
                 <aside class="details">
                     <div class="detail icon-dollar-grey-dark">
@@ -96,19 +77,51 @@
                             <span class="tag">International</span>
                         </li>
                     </ul>
+
                 </div>
+
+                <nav class="button-group event-links" role="nav">
+                    <div class="button-group-row">
+                        <a href="#" class="button-blue icon-ticket-white" id="buy-ticket">
+                            Buy Ticket
+                        </a>
+                        <a href="#" class="button-grey-dark icon-link-white" id="event-link">
+                            Event Link
+                        </a>
+                    </div>
+                </nav>
+
             </section>
-
-
             
         </main>
 
         <footer role="contentinfo">
             
+            <ul class="social">
+                <li class="facebook">
+                    <a href="#"></a>
+                </li>
+                <li class="twitter">
+                    <a href="#"></a>
+                </li>
+                <li class="google-plus">
+                    <a href="#"></a>
+                </li>
+                <li class="instagram">
+                    <a href="#"></a>
+                </li>
+            </ul>
+
+            <small class="copyright">
+                &copy; Kickitmob 2015
+            </small>
         </footer>
 
-        <!-- build:js assets/scripts/scripts.js -->
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbuild -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="assets/scripts/vendor/sticky-kit.min.js"></script>
+
+        <script src="assets/scripts/scripts.js"></script>
+        
+
     </body>
 </html>
