@@ -1161,11 +1161,14 @@ ol {
   /* 9 */
   height: 3.16049rem;
   /* 9 */
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #262626;
   z-index: 20;
 }
-/* line 8, ../scss/patterns/organisms/_header.scss */
+/* line 11, ../scss/patterns/organisms/_header.scss */
 [role="header"] .logo {
   position: absolute;
   /* 3 */
@@ -1199,7 +1202,7 @@ ol {
   left: 1rem;
   /* 9 */
 }
-/* line 15, ../scss/patterns/organisms/_header.scss */
+/* line 18, ../scss/patterns/organisms/_header.scss */
 [role="header"] .social {
   height: 100%;
   position: absolute;
@@ -1207,7 +1210,7 @@ ol {
   right: 0;
   bottom: 0;
 }
-/* line 23, ../scss/patterns/organisms/_header.scss */
+/* line 26, ../scss/patterns/organisms/_header.scss */
 [role="header"] [role="nav"] {
   position: absolute;
   top: 0;
@@ -1225,7 +1228,7 @@ ol {
   height: 100%;
   width: 48.57143%;
 }
-/* line 31, ../scss/patterns/organisms/_header.scss */
+/* line 34, ../scss/patterns/organisms/_header.scss */
 [role="header"] [role="nav"] .download-app {
   display: block;
   background-size: contain;

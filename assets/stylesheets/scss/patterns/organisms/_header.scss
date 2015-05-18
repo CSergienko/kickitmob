@@ -1,7 +1,10 @@
 [role="header"] {
     @include span(12 no-gutter);
     @include rem(height, ms(4));
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: $grey-darker;
     z-index: 20;
 
