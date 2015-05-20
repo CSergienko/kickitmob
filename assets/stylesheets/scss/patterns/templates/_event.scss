@@ -86,7 +86,7 @@
             position: absolute;
             @include rem(top, -6.19rem);
             right: $spacer;
-            width: span(6);
+            @include rem(width, 20rem);
         }
 
     }

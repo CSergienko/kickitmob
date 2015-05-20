@@ -311,7 +311,7 @@ body {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -1614,6 +1614,15 @@ footer .copyright {
     top: -6.19rem;
     /* 9 */
     right: 2.37037rem;
-    width: 48.57143%;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    width: 320px;
+    /* 9 */
+    width: 20rem;
+    /* 9 */
   }
 }

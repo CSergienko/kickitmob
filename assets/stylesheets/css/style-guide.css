@@ -251,6 +251,7 @@ th {
 /* Theme Conditional Mixins */
 /* Font Mixin */
 /* PX to REM */
+/* Retina Image Mixin */
 /* line 2, ../scss/utils/_extends.scss */
 .no-list {
   list-style: none;
@@ -263,6 +264,25 @@ th {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* line 3, ../scss/utils/_global.scss */
+[role="main"] {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../bower_components/susy/sass/susy/output/support/_clearfix.scss */
+[role="main"]:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 7, ../scss/utils/_global.scss */
+.content {
+  padding-left: 2.37037rem;
+  padding-right: 2.37037rem;
 }
 
 /* line 3, ../scss/style-guide.scss */
