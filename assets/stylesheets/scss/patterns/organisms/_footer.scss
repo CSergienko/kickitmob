@@ -1,13 +1,42 @@
 footer {
+    @include span(12);
     position: relative;
-    height: 20rem;
+    @include rem(padding, $spacer);
     background-color: $grey-darker;
     @include rem(margin-top, $spacer);
     color: $white;
+
+    .footer-cta,
+    .footer-social {
+        @include span(6);
+        @include rem(margin-bottom, $spacer);
+
+        .title {
+            color: $white;
+        }
+    }
+
+    .footer-cta {
+        @include last;
+        .cta-copy {
+            @include span(6);
+            margin-top: 0;
+        }
+
+        .download-app {
+            @include span(6);
+            @include last;
+            display: block;
+            background-size: contain;
+            background-position: 50%;
+            @include rem(height, 5rem);
+        }
+    }
 
     .copyright {
         position: absolute;
         @include rem(bottom, 1rem);
         @include rem(right, $spacer);
+        font-size: 70%;
     }
 }

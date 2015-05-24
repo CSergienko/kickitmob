@@ -724,6 +724,11 @@ ol {
   /* 9 */
 }
 
+/* line 129, ../scss/patterns/atoms/_typography.scss */
+a {
+  color: #13b9e2;
+}
+
 /* line 1, ../scss/patterns/atoms/_buttons.scss */
 .button, .button-block, .button-grey-block, .button-grey-dark-block, .button-grey-darker-block, .button-red-block, .button-blue-block, .button-lime-block, .button-purple-block, .button-pink-block, .button-orange-block, .button-grey, .button-grey-dark, .button-grey-darker, .button-red, .button-blue, .button-lime, .button-purple, .button-pink, .button-orange {
   display: inline-block;
@@ -1250,8 +1255,21 @@ ol {
 
 /* line 1, ../scss/patterns/organisms/_footer.scss */
 footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
-  height: 20rem;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 37.92593px;
+  /* 9 */
+  padding: 2.37037rem;
+  /* 9 */
   background-color: #262626;
   /* 3 */
   /* 3 */
@@ -1265,7 +1283,62 @@ footer {
   /* 9 */
   color: #ffffff;
 }
-/* line 8, ../scss/patterns/organisms/_footer.scss */
+/* line 9, ../scss/patterns/organisms/_footer.scss */
+footer .footer-cta,
+footer .footer-social {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 37.92593px;
+  /* 9 */
+  margin-bottom: 2.37037rem;
+  /* 9 */
+}
+/* line 14, ../scss/patterns/organisms/_footer.scss */
+footer .footer-cta .title,
+footer .footer-social .title {
+  color: #ffffff;
+}
+/* line 19, ../scss/patterns/organisms/_footer.scss */
+footer .footer-cta {
+  float: right;
+  margin-right: 0;
+}
+/* line 21, ../scss/patterns/organisms/_footer.scss */
+footer .footer-cta .cta-copy {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+  margin-top: 0;
+}
+/* line 26, ../scss/patterns/organisms/_footer.scss */
+footer .footer-cta .download-app {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+  float: right;
+  margin-right: 0;
+  display: block;
+  background-size: contain;
+  background-position: 50%;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 80px;
+  /* 9 */
+  height: 5rem;
+  /* 9 */
+}
+/* line 36, ../scss/patterns/organisms/_footer.scss */
 footer .copyright {
   position: absolute;
   /* 3 */
@@ -1288,6 +1361,7 @@ footer .copyright {
   /* 9 */
   right: 2.37037rem;
   /* 9 */
+  font-size: 70%;
 }
 
 /* line 1, ../scss/patterns/organisms/_hero.scss */
