@@ -8,6 +8,13 @@
     .tile {
         position: relative;
         margin-bottom: gutter();
+        transition: 0.8s;
+        z-index: 5;
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
         
         @include breakpoint((max-width $bp-medium)) {
             @include span(12);
@@ -54,11 +61,12 @@
             margin: 0;
         }
 
-        p {
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+        time {
+            display: block;
+        }
+
+        small {
+            display: block;
         }
     }
 }

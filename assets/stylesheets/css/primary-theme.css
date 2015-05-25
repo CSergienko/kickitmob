@@ -1729,6 +1729,13 @@ footer .copyright {
 .event-grid .tile {
   position: relative;
   margin-bottom: 2.85714%;
+  transition: 0.8s;
+  z-index: 5;
+}
+/* line 14, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile:hover {
+  transform: scale(1.1);
+  z-index: 10;
 }
 @media (max-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event-grid.scss */
@@ -1746,7 +1753,7 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 19, ../scss/patterns/templates/_event-grid.scss */
+  /* line 26, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(2n + 2) {
     float: right;
     margin-right: 0;
@@ -1759,7 +1766,7 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 27, ../scss/patterns/templates/_event-grid.scss */
+  /* line 34, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(3n + 3) {
     float: right;
     margin-right: 0;
@@ -1772,13 +1779,13 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 35, ../scss/patterns/templates/_event-grid.scss */
+  /* line 42, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(4n + 4) {
     float: right;
     margin-right: 0;
   }
 }
-/* line 41, ../scss/patterns/templates/_event-grid.scss */
+/* line 48, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content {
   position: absolute;
   bottom: 0;
@@ -1796,18 +1803,19 @@ footer .copyright {
   /* 9 */
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 49, ../scss/patterns/templates/_event-grid.scss */
+/* line 56, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content * {
   color: #ffffff;
 }
-/* line 53, ../scss/patterns/templates/_event-grid.scss */
+/* line 60, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content h4 {
   margin: 0;
 }
-/* line 57, ../scss/patterns/templates/_event-grid.scss */
-.event-grid .tile-content p {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+/* line 64, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content time {
+  display: block;
+}
+/* line 68, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content small {
+  display: block;
 }
