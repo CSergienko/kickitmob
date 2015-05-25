@@ -1,5 +1,9 @@
 @include border-box-sizing;
 
+body {
+    padding-top: $header-height;
+}
+
 [role="main"] {
     @include container;
 }

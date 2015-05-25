@@ -1,0 +1,38 @@
+.event-grid {
+    @include container;
+
+    .grid {
+        @include span(12);
+    }
+
+    .tile {
+        
+        @include breakpoint((max-width $bp-medium)) {
+            @include span(12);
+        }
+
+        @include breakpoint($bp-medium $bp-large) {
+            @include span(6);
+
+            &:nth-child(2n + 2) {
+                @include last;
+            }
+        }
+
+        @include breakpoint($bp-large $bp-xlarge) {
+            @include span(4);
+
+            &:nth-child(3n + 3) {
+                @include last;
+            }
+        }
+
+        @include breakpoint($bp-xlarge) {
+            @include span(3);
+
+            &:nth-child(4n + 4) {
+                @include last;
+            }
+        }
+    }
+}

@@ -56,12 +56,13 @@
     );
 
     /* Core Media Queries */
-    $bp-medium: 47.9375rem; //767px
-    $bp-large: 63.9375rem; //1023px
-    $bp-xlarge: 83.4375rem; //1335px
+    $bp-medium: 47.9375em; //767px
+    $bp-large: 63.9375em; //1023px
+    $bp-xlarge: 83.4375em; //1335px
     
 
 /* Reusable Measures */
     $spacer: ms(3);
     $base-margin: ms(1.5);
     $base-padding: ms(1.5);
+    $header-height: ms(4);

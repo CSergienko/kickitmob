@@ -1,6 +1,6 @@
 [role="header"] {
     @include span(12 no-gutter);
-    @include rem(height, ms(4));
+    @include rem(height, $header-height);
     position: fixed;
     top: 0;
     left: 0;
