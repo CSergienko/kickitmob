@@ -1725,6 +1725,11 @@ footer .copyright {
   margin-left: 0;
   margin-right: 0;
 }
+/* line 8, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile {
+  position: relative;
+  margin-bottom: 2.85714%;
+}
 @media (max-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile {
@@ -1741,7 +1746,7 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 17, ../scss/patterns/templates/_event-grid.scss */
+  /* line 19, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(2n + 2) {
     float: right;
     margin-right: 0;
@@ -1754,7 +1759,7 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 25, ../scss/patterns/templates/_event-grid.scss */
+  /* line 27, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(3n + 3) {
     float: right;
     margin-right: 0;
@@ -1767,9 +1772,42 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 33, ../scss/patterns/templates/_event-grid.scss */
+  /* line 35, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(4n + 4) {
     float: right;
     margin-right: 0;
   }
+}
+/* line 41, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 18.96296px;
+  /* 9 */
+  padding: 1.18519rem;
+  /* 9 */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 49, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content * {
+  color: #ffffff;
+}
+/* line 53, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content h4 {
+  margin: 0;
+}
+/* line 57, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

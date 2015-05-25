@@ -6,6 +6,8 @@
     }
 
     .tile {
+        position: relative;
+        margin-bottom: gutter();
         
         @include breakpoint((max-width $bp-medium)) {
             @include span(12);
@@ -33,6 +35,30 @@
             &:nth-child(4n + 4) {
                 @include last;
             }
+        }
+    }
+
+    .tile-content {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        @include rem(padding, $spacer / 2);
+        background-color: rgba(0, 0, 0, 0.8);
+
+        * {
+            color: $white;
+        }
+        
+        h4 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }
