@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "mixitup": "~2.1.8",
-    "owl-carousel": "~1.3.2"
+    "owl-carousel": "~1.3.2",
+    "sumoselect": "~2.0.2"
   }
 }
