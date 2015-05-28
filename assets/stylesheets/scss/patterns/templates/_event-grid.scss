@@ -1,0 +1,74 @@
+.event-grid {
+    @include container;
+
+    .grid {
+        @include span(12);
+    }
+
+    .tile {
+        position: relative;
+        z-index: 5;
+        display: none;
+        margin-bottom: gutter(); 
+        
+        @include breakpoint((max-width $bp-medium)) {
+            @include span(12);
+        }
+
+        @include breakpoint($bp-medium $bp-large) {
+            @include span(6);
+
+            &:nth-child(2n + 2) {
+                margin-right: 0;
+            }
+        }
+
+        @include breakpoint($bp-large $bp-xlarge) {
+            @include span(4);
+
+            &:nth-child(3n + 3) {
+                margin-right: 0;
+            }
+        }
+
+        @include breakpoint($bp-xlarge) {
+            @include span(3);
+
+            &:nth-child(4n + 4) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .tile-content {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        @include rem(padding, $spacer / 2);
+        background-color: rgba(0, 0, 0, 0.8);
+
+        * {
+            color: $white;
+        }
+        
+        h4 {
+            margin: 0;
+        }
+
+        time {
+            display: block;
+        }
+
+        small {
+            display: block;
+        }
+    }
+
+    .grid-filters {
+        fieldset {
+            display: inline-block;
+            border: none;
+        }
+    }
+}

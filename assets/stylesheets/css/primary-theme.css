@@ -267,6 +267,11 @@ th {
 }
 
 /* line 3, ../scss/utils/_global.scss */
+body {
+  padding-top: 3.16049rem;
+}
+
+/* line 7, ../scss/utils/_global.scss */
 [role="main"] {
   max-width: 100%;
   margin-left: auto;
@@ -279,7 +284,7 @@ th {
   clear: both;
 }
 
-/* line 7, ../scss/utils/_global.scss */
+/* line 11, ../scss/utils/_global.scss */
 .content {
   padding-left: 2.37037rem;
   padding-right: 2.37037rem;
@@ -293,21 +298,21 @@ body {
   /* Font Size Breakpoints */
   font-size: 14px;
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
     font-size: 16px;
   }
 }
-@media (min-width: 63.9375rem) {
+@media (min-width: 63.9375em) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
     font-size: 18px;
   }
 }
-@media (min-width: 83.4375rem) {
+@media (min-width: 83.4375em) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
@@ -384,7 +389,7 @@ h1,
   margin-left: -0.1875rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 48, ../scss/patterns/atoms/_typography.scss */
   h1,
   .h1 {
@@ -445,7 +450,7 @@ h2,
   margin-left: -0.125rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 58, ../scss/patterns/atoms/_typography.scss */
   h2,
   .h2 {
@@ -506,7 +511,7 @@ h3,
   margin-left: -0.09375rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 69, ../scss/patterns/atoms/_typography.scss */
   h3,
   .h3 {
@@ -567,7 +572,7 @@ h4,
   margin-left: -0.0625rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 80, ../scss/patterns/atoms/_typography.scss */
   h4,
   .h4 {
@@ -618,7 +623,7 @@ h5,
   line-height: 1.33333rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 91, ../scss/patterns/atoms/_typography.scss */
   h5,
   .h5 {
@@ -669,7 +674,7 @@ h6,
   line-height: 1.1547rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 101, ../scss/patterns/atoms/_typography.scss */
   h6,
   .h6 {
@@ -1043,7 +1048,7 @@ a {
   line-height: 1rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 9, ../scss/patterns/atoms/_list-styles.scss */
   .tags .tag {
     /* 3 */
@@ -1382,7 +1387,7 @@ footer .copyright {
   margin-bottom: 2.37037rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 1, ../scss/patterns/organisms/_hero.scss */
   .hero {
     /* 3 */
@@ -1416,7 +1421,7 @@ footer .copyright {
 .hero .poster[href] {
   text-decoration: none;
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9375em) {
   /* line 10, ../scss/patterns/organisms/_hero.scss */
   .hero .poster {
     top: 0;
@@ -1436,7 +1441,7 @@ footer .copyright {
     margin: auto;
   }
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 10, ../scss/patterns/organisms/_hero.scss */
   .hero .poster {
     /* 3 */
@@ -1470,7 +1475,7 @@ footer .copyright {
   margin-right: 0;
   position: relative;
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event.scss */
   .event .details {
     /* 3 */
@@ -1517,7 +1522,7 @@ footer .copyright {
     border-bottom: 1px solid #27333d;
   }
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event.scss */
   .event .details {
     width: 31.42857%;
@@ -1614,7 +1619,7 @@ footer .copyright {
 .event .description p:last-of-type {
   margin-bottom: 0;
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 53, ../scss/patterns/templates/_event.scss */
   .event .description {
     width: 65.71429%;
@@ -1639,7 +1644,7 @@ footer .copyright {
   margin-top: 2.37037rem;
   /* 9 */
 }
-@media (min-width: 63.9375rem) {
+@media (min-width: 63.9375em) {
   /* line 69, ../scss/patterns/templates/_event.scss */
   .event .tags {
     /* 3 */
@@ -1654,7 +1659,7 @@ footer .copyright {
     /* 9 */
   }
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9375em) {
   /* line 78, ../scss/patterns/templates/_event.scss */
   .event .event-links {
     width: 100%;
@@ -1673,7 +1678,7 @@ footer .copyright {
     /* 9 */
   }
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 78, ../scss/patterns/templates/_event.scss */
   .event .event-links {
     position: absolute;
@@ -1699,4 +1704,115 @@ footer .copyright {
     width: 20rem;
     /* 9 */
   }
+}
+
+/* line 1, ../scss/patterns/templates/_event-grid.scss */
+.event-grid {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../bower_components/susy/sass/susy/output/support/_clearfix.scss */
+.event-grid:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 4, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .grid {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 8, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile {
+  position: relative;
+  z-index: 5;
+  display: none;
+  margin-bottom: 2.85714%;
+}
+@media (max-width: 47.9375em) {
+  /* line 8, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 47.9375em) and (max-width: 63.9375em) {
+  /* line 8, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile {
+    width: 48.57143%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+  /* line 21, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 63.9375em) and (max-width: 83.4375em) {
+  /* line 8, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile {
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+  /* line 29, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 83.4375em) {
+  /* line 8, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile {
+    width: 22.85714%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+  /* line 37, ../scss/patterns/templates/_event-grid.scss */
+  .event-grid .tile:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+}
+/* line 43, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 18.96296px;
+  /* 9 */
+  padding: 1.18519rem;
+  /* 9 */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 51, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content * {
+  color: #ffffff;
+}
+/* line 55, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content h4 {
+  margin: 0;
+}
+/* line 59, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content time {
+  display: block;
+}
+/* line 63, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .tile-content small {
+  display: block;
+}
+/* line 69, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .grid-filters fieldset {
+  display: inline-block;
+  border: none;
 }
