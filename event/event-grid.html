@@ -37,15 +37,51 @@
             <section class="hero">
                 <div class="banner" style="background-image: url('../assets/images/banner/rock.jpg')"></div>
             </section>
-
-            <div class="grid-filters">
-                Filters
+            
+            <div class="button-group">
+                <div class="button-group-row">
+                    <button data-sort="date:desc" class="button-grey-dark sort">
+                        Newest
+                    </button>
+                    <button data-sort="order:asc" class="button-grey-dark sort">
+                        Upcoming
+                    </button>
+                </div>
             </div>
 
+            <form class="grid-filters" id="filters">
+                <fieldset>
+                    <label>Location</label>
+                    <select>
+                        <option value="">All</option>
+                        <option value=".johannesburg">Johannesburg</option>
+                        <option value=".cape-town">Cape Town</option>
+                        <option value=".durban">Durban</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label>Genre</label>
+                    <select>
+                        <option value="">All</option>
+                        <option value=".rock">Rock</option>
+                        <option value=".hip-hop">Hip Hop</option>
+                        <option value=".folk">Folk</option>
+                    </select>
+                </fieldset>
+
+                <button id="Reset">Clear Filters</button>
+
+                <fieldset class="search">
+                    <label for="search">Search by keyword: </label> 
+                    <input id="search" type="search" placeholder="Search by keyword">
+                    <input type="submit" value ="Search" class="button-red">
+                </fieldset>
+            </form>
+
             <section class="event-grid content">
-                
                 <div class="grid">
-                    <a href="#" class="tile">
+                    <a href="#" class="tile johannesburg rock folk" data-date="201506062100" data-order="5">
                         <div class='square-box'>
                             <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                         </div>
@@ -55,7 +91,7 @@
                             <small>Johannesburg</small>
                         </div>
                     </a>
-                    <a href="#" class="tile">
+                    <a href="#" class="tile johannesburg hip-hop" data-date="201506052100" data-order="4">
                         <div class='square-box'>
                             <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                         </div>
@@ -65,34 +101,34 @@
                             <small>Johannesburg</small>
                         </div>
                     </a>
-                    <a href="#" class="tile">
+                    <a href="#" class="tile durban hip-hop" data-date="201506042100" data-order="3">
                         <div class='square-box'>
                             <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                         </div>
                         <div class="tile-content">
                             <h4>Title</h4>
                             <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
-                            <small>Johannesburg</small>
+                            <small>Durban</small>
                         </div>
                     </a>
-                    <a href="#" class="tile">
+                    <a href="#" class="tile cape-town folk" data-date="201506032100" data-order="2">
                         <div class='square-box'>
                             <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                         </div>
                         <div class="tile-content">
                             <h4>Title</h4>
                             <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
-                            <small>Johannesburg</small>
+                            <small>Cape Town</small>
                         </div>
                     </a>
-                    <a href="#" class="tile">
+                    <a href="#" class="tile cape-town rock hip-hop" data-date="2015-06-02 21:00" data-order="1">
                         <div class='square-box'>
                             <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                         </div>
                         <div class="tile-content">
                             <h4>Title</h4>
                             <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
-                            <small>Johannesburg</small>
+                            <small>Cape Town</small>
                         </div>
                     </a>
                 </div>
@@ -133,6 +169,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="../assets/scripts/vendor/sticky-kit.min.js"></script>
         <script src="../bower_components/mixitup/src/jquery.mixitup.js"></script>
+        <script src="../bower_components/sumoselect/jquery.sumoselect.min.js"></script>
 
         <script src="../assets/scripts/scripts.js"></script>
         

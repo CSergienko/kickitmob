@@ -1728,14 +1728,9 @@ footer .copyright {
 /* line 8, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile {
   position: relative;
-  margin-bottom: 2.85714%;
-  transition: 0.8s;
   z-index: 5;
-}
-/* line 14, ../scss/patterns/templates/_event-grid.scss */
-.event-grid .tile:hover {
-  transform: scale(1.1);
-  z-index: 10;
+  display: none;
+  margin-bottom: 2.85714%;
 }
 @media (max-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event-grid.scss */
@@ -1753,9 +1748,8 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 26, ../scss/patterns/templates/_event-grid.scss */
+  /* line 21, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(2n + 2) {
-    float: right;
     margin-right: 0;
   }
 }
@@ -1766,9 +1760,8 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 34, ../scss/patterns/templates/_event-grid.scss */
+  /* line 29, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(3n + 3) {
-    float: right;
     margin-right: 0;
   }
 }
@@ -1779,13 +1772,12 @@ footer .copyright {
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 42, ../scss/patterns/templates/_event-grid.scss */
+  /* line 37, ../scss/patterns/templates/_event-grid.scss */
   .event-grid .tile:nth-child(4n + 4) {
-    float: right;
     margin-right: 0;
   }
 }
-/* line 48, ../scss/patterns/templates/_event-grid.scss */
+/* line 43, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content {
   position: absolute;
   bottom: 0;
@@ -1803,19 +1795,24 @@ footer .copyright {
   /* 9 */
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 56, ../scss/patterns/templates/_event-grid.scss */
+/* line 51, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content * {
   color: #ffffff;
 }
-/* line 60, ../scss/patterns/templates/_event-grid.scss */
+/* line 55, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content h4 {
   margin: 0;
 }
-/* line 64, ../scss/patterns/templates/_event-grid.scss */
+/* line 59, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content time {
   display: block;
 }
-/* line 68, ../scss/patterns/templates/_event-grid.scss */
+/* line 63, ../scss/patterns/templates/_event-grid.scss */
 .event-grid .tile-content small {
   display: block;
+}
+/* line 69, ../scss/patterns/templates/_event-grid.scss */
+.event-grid .grid-filters fieldset {
+  display: inline-block;
+  border: none;
 }

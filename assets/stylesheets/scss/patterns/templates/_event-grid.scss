@@ -7,14 +7,9 @@
 
     .tile {
         position: relative;
-        margin-bottom: gutter();
-        transition: 0.8s;
         z-index: 5;
-
-        &:hover {
-            transform: scale(1.1);
-            z-index: 10;
-        }
+        display: none;
+        margin-bottom: gutter(); 
         
         @include breakpoint((max-width $bp-medium)) {
             @include span(12);
@@ -24,7 +19,7 @@
             @include span(6);
 
             &:nth-child(2n + 2) {
-                @include last;
+                margin-right: 0;
             }
         }
 
@@ -32,7 +27,7 @@
             @include span(4);
 
             &:nth-child(3n + 3) {
-                @include last;
+                margin-right: 0;
             }
         }
 
@@ -40,7 +35,7 @@
             @include span(3);
 
             &:nth-child(4n + 4) {
-                @include last;
+                margin-right: 0;
             }
         }
     }
@@ -71,6 +66,9 @@
     }
 
     .grid-filters {
-        
+        fieldset {
+            display: inline-block;
+            border: none;
+        }
     }
 }
