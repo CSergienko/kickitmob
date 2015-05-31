@@ -61,6 +61,14 @@
             }
         }
 
+        #reset-filters {
+            color: $red;
+            float: right;
+            @include rem(font-size, ms(0));
+            line-height: inherit;
+            font-family: $regular;
+        }
+
         [type="checkbox"] {
             display: none;
 

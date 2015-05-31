@@ -1784,7 +1784,7 @@ footer .copyright {
   color: #ffffff;
 }
 /* line 46, ../scss/patterns/templates/_event-tiles.scss */
-.event-tiles .tile-content h4 {
+.event-tiles .tile-content h6 {
   margin: 0;
 }
 /* line 50, ../scss/patterns/templates/_event-tiles.scss */
@@ -1794,6 +1794,11 @@ footer .copyright {
 /* line 54, ../scss/patterns/templates/_event-tiles.scss */
 .event-tiles .tile-content small {
   display: block;
+}
+/* line 58, ../scss/patterns/templates/_event-tiles.scss */
+.event-tiles .tile-content time,
+.event-tiles .tile-content small {
+  font-size: 80%;
 }
 
 /* line 3, ../scss/patterns/pages/_event-grid.scss */
@@ -1935,10 +1940,27 @@ footer .copyright {
   /* 9 */
 }
 /* line 64, ../scss/patterns/pages/_event-grid.scss */
+.event-grid .event-filters #reset-filters {
+  color: #fe002a;
+  float: right;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 16px;
+  /* 9 */
+  font-size: 1rem;
+  /* 9 */
+  line-height: inherit;
+  font-family: 400;
+}
+/* line 72, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-filters [type="checkbox"] {
   display: none;
 }
-/* line 67, ../scss/patterns/pages/_event-grid.scss */
+/* line 75, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-filters [type="checkbox"] + label {
   width: 100%;
   float: left;
@@ -1956,7 +1978,7 @@ footer .copyright {
   /* 9 */
   display: block;
 }
-/* line 72, ../scss/patterns/pages/_event-grid.scss */
+/* line 80, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-filters [type="checkbox"] + label:before {
   float: left;
   content: '';
@@ -1977,11 +1999,11 @@ footer .copyright {
   border: 3px solid #ffffff;
   border-radius: 1.33333rem;
 }
-/* line 86, ../scss/patterns/pages/_event-grid.scss */
+/* line 94, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-filters [type="checkbox"]:checked + label:before {
   background-color: #13b9e2;
 }
-/* line 93, ../scss/patterns/pages/_event-grid.scss */
+/* line 101, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-tiles {
   width: 100%;
   /* 3 */
@@ -2006,7 +2028,7 @@ footer .copyright {
   /* 9 */
 }
 @media (max-width: 47.9375em) {
-  /* line 93, ../scss/patterns/pages/_event-grid.scss */
+  /* line 101, ../scss/patterns/pages/_event-grid.scss */
   .event-grid .event-tiles {
     /* 3 */
     /* 3 */
@@ -2031,7 +2053,7 @@ footer .copyright {
   }
 }
 @media (min-width: 47.9375em) {
-  /* line 93, ../scss/patterns/pages/_event-grid.scss */
+  /* line 101, ../scss/patterns/pages/_event-grid.scss */
   .event-grid .event-tiles {
     width: 70%;
     /* 3 */
@@ -2048,12 +2070,12 @@ footer .copyright {
   }
 }
 @media (min-width: 63.9375em) {
-  /* line 93, ../scss/patterns/pages/_event-grid.scss */
+  /* line 101, ../scss/patterns/pages/_event-grid.scss */
   .event-grid .event-tiles {
     width: 75%;
   }
 }
-/* line 113, ../scss/patterns/pages/_event-grid.scss */
+/* line 121, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .error-message {
   text-align: center;
   height: 1.5rem;
@@ -2064,7 +2086,7 @@ footer .copyright {
   left: 0;
   margin: auto;
 }
-/* line 124, ../scss/patterns/pages/_event-grid.scss */
+/* line 132, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-sort {
   width: 100%;
   /* 3 */
@@ -2108,7 +2130,7 @@ footer .copyright {
   padding-bottom: 2.37037rem;
   /* 9 */
 }
-/* line 129, ../scss/patterns/pages/_event-grid.scss */
+/* line 137, ../scss/patterns/pages/_event-grid.scss */
 .event-grid .event-sort button {
   width: 50%;
 }

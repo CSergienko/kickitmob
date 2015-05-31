@@ -38,13 +38,6 @@
                 <div class="banner" style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                 <h1 class="page-title">Events</h1>
             </section>
-            
-            <div class="event-sort button-group">
-                <div class="button-group-row">
-                    <button data-sort="date:desc" class="button-blue sort">Newest</button>
-                    <button data-sort="order:asc" class="button-blue sort">Upcoming</button>
-                </div>
-            </div>
 
             <!-- <div class="search">
                 <input id="search" type="search" placeholder="Search" form="filters">
@@ -55,9 +48,12 @@
                 
                 <button class="button-grey-dark" id="show-filters">Filter Events</button>
                 <form id="filters" class="event-filters">
-                    <h4>Filters</h4>
+
+                    <h4>Filters <a href="#" id="reset-filters">Clear Filters</a></h4>
+
                     <fieldset>
                         <h5>Areas</h5>
+                        
                         <div class="checkbox">
                             <input name="johannesburg" id="johannesburg" type="checkbox" value=".johannesburg"/>
                             <label for="johannesburg">Johannesburg</label>
@@ -73,7 +69,8 @@
                     </fieldset>
 
                     <fieldset>
-                        <h5>Genres</h5>
+                        <h5>Categories</h5>
+                        
                         <div class="checkbox">
                             <input name="rock" id="rock" type="checkbox" value=".rock"/>
                             <label for="rock">Rock</label>
@@ -91,6 +88,14 @@
                 </form>
 
                 <div class="event-tiles">
+
+                    <div class="event-sort button-group">
+                        <div class="button-group-row">
+                            <button data-sort="date:desc" class="button-blue sort">Newest</button>
+                            <button data-sort="order:asc" class="button-blue sort">Upcoming</button>
+                        </div>
+                    </div>
+
                     <div class="error-message"></div>
                     <div class="grid">
                         <a href="#" class="tile johannesburg rock folk" data-date="201506062100" data-order="5">
@@ -98,7 +103,7 @@
                                 <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                             </div>
                             <div class="tile-content">
-                                <h4>Title</h4>
+                                <h6>Title</h6>
                                 <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
                                 <small>Johannesburg</small>
                             </div>
@@ -108,7 +113,7 @@
                                 <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                             </div>
                             <div class="tile-content">
-                                <h4>Title</h4>
+                                <h6>Title</h6>
                                 <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
                                 <small>Johannesburg</small>
                             </div>
@@ -118,7 +123,7 @@
                                 <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                             </div>
                             <div class="tile-content">
-                                <h4>Title</h4>
+                                <h6>Title</h6>
                                 <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
                                 <small>Durban</small>
                             </div>
@@ -128,7 +133,7 @@
                                 <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                             </div>
                             <div class="tile-content">
-                                <h4>Title</h4>
+                                <h6>Title</h6>
                                 <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
                                 <small>Cape Town</small>
                             </div>
@@ -138,7 +143,7 @@
                                 <div class='square-content' style="background-image: url('../assets/images/banner/rock.jpg')"></div>
                             </div>
                             <div class="tile-content">
-                                <h4>Title</h4>
+                                <h6>Title</h6>
                                 <time datetime="2015-06-06 21:00">06 Jun 2015, 09:00</time>
                                 <small>Cape Town</small>
                             </div>

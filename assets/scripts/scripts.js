@@ -24,6 +24,7 @@ $(document).ready(function() {
         var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "checkboxFilter" object so that we can share methods and properties between all parts of the object.
         
         self.$filters = $('.event-filters');
+        self.$reset = $('#reset-filters');
         self.$container = $('.event-tiles .grid');
         
         self.$filters.find('fieldset').each(function(){
@@ -43,6 +44,12 @@ $(document).ready(function() {
         var self = this;
         
         self.$filters.on('change', function(){
+          self.parseFilters();
+        });
+
+        self.$reset.on('click', function(e){
+          e.preventDefault();
+          self.$filters[0].reset();
           self.parseFilters();
         });
     
