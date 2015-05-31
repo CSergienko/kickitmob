@@ -3,7 +3,7 @@ footer {
     position: relative;
     @include rem(padding, $spacer);
     background-color: $grey-darker;
-    @include rem(margin-top, $spacer);
+    //@include rem(margin-top, $spacer);
     color: $white;
 
     .footer-cta,

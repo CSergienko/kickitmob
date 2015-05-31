@@ -1,5 +1,4 @@
-.event-grid {
-    @include container;
+.event-tiles {
 
     .grid {
         @include span(12);
@@ -11,11 +10,11 @@
         display: none;
         margin-bottom: gutter(); 
         
-        @include breakpoint((max-width $bp-medium)) {
+        @include breakpoint((max-width $bp-medium / 1.5)) {
             @include span(12);
         }
 
-        @include breakpoint($bp-medium $bp-large) {
+        @include breakpoint(($bp-medium / 1.5) $bp-large) {
             @include span(6);
 
             &:nth-child(2n + 2) {
@@ -23,18 +22,10 @@
             }
         }
 
-        @include breakpoint($bp-large $bp-xlarge) {
+        @include breakpoint($bp-large) {
             @include span(4);
 
             &:nth-child(3n + 3) {
-                margin-right: 0;
-            }
-        }
-
-        @include breakpoint($bp-xlarge) {
-            @include span(3);
-
-            &:nth-child(4n + 4) {
                 margin-right: 0;
             }
         }

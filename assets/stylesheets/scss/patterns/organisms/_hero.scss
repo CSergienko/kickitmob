@@ -1,10 +1,19 @@
 .hero {
     @include span(12);
     position: relative;
-    @include rem(margin-bottom, $spacer);
+    //@include rem(margin-bottom, $spacer);
 
     @include breakpoint($bp-medium) {
-        @include rem(margin-bottom, $spacer * 2);
+        //@include rem(margin-bottom, $spacer * 2);
+    }
+
+    .page-title {
+        color: $white;
+        @include font(ms(7));
+        margin: 0;
+        position: absolute;
+        @include rem(bottom, $spacer);
+        @include rem(left, $spacer);
     }
 
     .poster {

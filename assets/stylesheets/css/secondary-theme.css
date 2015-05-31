@@ -267,6 +267,11 @@ th {
 }
 
 /* line 3, ../scss/utils/_global.scss */
+body {
+  padding-top: 3.16049rem;
+}
+
+/* line 7, ../scss/utils/_global.scss */
 [role="main"] {
   max-width: 100%;
   margin-left: auto;
@@ -279,7 +284,7 @@ th {
   clear: both;
 }
 
-/* line 7, ../scss/utils/_global.scss */
+/* line 11, ../scss/utils/_global.scss */
 .content {
   padding-left: 2.37037rem;
   padding-right: 2.37037rem;
@@ -293,21 +298,21 @@ body {
   /* Font Size Breakpoints */
   font-size: 14px;
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
     font-size: 16px;
   }
 }
-@media (min-width: 63.9375rem) {
+@media (min-width: 63.9375em) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
     font-size: 18px;
   }
 }
-@media (min-width: 83.4375rem) {
+@media (min-width: 83.4375em) {
   /* line 1, ../scss/patterns/atoms/_typography.scss */
   html,
   body {
@@ -384,7 +389,7 @@ h1,
   margin-left: -0.1875rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 48, ../scss/patterns/atoms/_typography.scss */
   h1,
   .h1 {
@@ -445,7 +450,7 @@ h2,
   margin-left: -0.125rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 58, ../scss/patterns/atoms/_typography.scss */
   h2,
   .h2 {
@@ -506,7 +511,7 @@ h3,
   margin-left: -0.09375rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 69, ../scss/patterns/atoms/_typography.scss */
   h3,
   .h3 {
@@ -567,7 +572,7 @@ h4,
   margin-left: -0.0625rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 80, ../scss/patterns/atoms/_typography.scss */
   h4,
   .h4 {
@@ -618,7 +623,7 @@ h5,
   line-height: 1.33333rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 91, ../scss/patterns/atoms/_typography.scss */
   h5,
   .h5 {
@@ -669,7 +674,7 @@ h6,
   line-height: 1.1547rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 101, ../scss/patterns/atoms/_typography.scss */
   h6,
   .h6 {
@@ -784,6 +789,10 @@ a {
   width: 100%;
 }
 /* line 18, ../scss/patterns/atoms/_buttons.scss */
+.button:focus, .button-block:focus, .button-grey-block:focus, .button-grey-dark-block:focus, .button-grey-darker-block:focus, .button-red-block:focus, .button-blue-block:focus, .button-lime-block:focus, .button-purple-block:focus, .button-pink-block:focus, .button-orange-block:focus, .button-grey:focus, .button-grey-dark:focus, .button-grey-darker:focus, .button-red:focus, .button-blue:focus, .button-lime:focus, .button-purple:focus, .button-pink:focus, .button-orange:focus {
+  outline: none;
+}
+/* line 22, ../scss/patterns/atoms/_buttons.scss */
 .button[class*="icon-"], [class*="icon-"].button-block, [class*="icon-"].button-grey-block, [class*="icon-"].button-grey-dark-block, [class*="icon-"].button-grey-darker-block, [class*="icon-"].button-red-block, [class*="icon-"].button-blue-block, [class*="icon-"].button-lime-block, [class*="icon-"].button-purple-block, [class*="icon-"].button-pink-block, [class*="icon-"].button-orange-block, [class*="icon-"].button-grey, [class*="icon-"].button-grey-dark, [class*="icon-"].button-grey-darker, [class*="icon-"].button-red, [class*="icon-"].button-blue, [class*="icon-"].button-lime, [class*="icon-"].button-purple, [class*="icon-"].button-pink, [class*="icon-"].button-orange {
   /* 3 */
   /* 3 */
@@ -817,89 +826,89 @@ a {
   /* 9 */
   background-position-y: 50%;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-grey, .button-grey-block {
   background-color: #e3e3e3;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-grey:hover, .button-grey-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-grey:hover, .button-grey-block:hover, .button-grey.active, .active.button-grey-block {
   background-color: #f0f0f0;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-grey-dark, .button-grey-dark-block {
   background-color: #27333d;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-grey-dark:hover, .button-grey-dark-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-grey-dark:hover, .button-grey-dark-block:hover, .button-grey-dark.active, .active.button-grey-dark-block {
   background-color: #31404d;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-grey-darker, .button-grey-darker-block {
   background-color: #262626;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-grey-darker:hover, .button-grey-darker-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-grey-darker:hover, .button-grey-darker-block:hover, .button-grey-darker.active, .active.button-grey-darker-block {
   background-color: #333333;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-red, .button-red-block {
   background-color: #fe002a;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-red:hover, .button-red-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-red:hover, .button-red-block:hover, .button-red.active, .active.button-red-block {
   background-color: #ff193f;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-blue, .button-blue-block {
   background-color: #13b9e2;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-blue:hover, .button-blue-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-blue:hover, .button-blue-block:hover, .button-blue.active, .active.button-blue-block {
   background-color: #22c4ec;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-lime, .button-lime-block {
   background-color: #caf902;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-lime:hover, .button-lime-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-lime:hover, .button-lime-block:hover, .button-lime.active, .active.button-lime-block {
   background-color: #d1fd17;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-purple, .button-purple-block {
   background-color: #ab18ff;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-purple:hover, .button-purple-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-purple:hover, .button-purple-block:hover, .button-purple.active, .active.button-purple-block {
   background-color: #b432ff;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-pink, .button-pink-block {
   background-color: #ff3ce6;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-pink:hover, .button-pink-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-pink:hover, .button-pink-block:hover, .button-pink.active, .active.button-pink-block {
   background-color: #ff56e9;
 }
-/* line 26, ../scss/patterns/atoms/_buttons.scss */
+/* line 30, ../scss/patterns/atoms/_buttons.scss */
 .button-orange, .button-orange-block {
   background-color: #ff9517;
 }
-/* line 35, ../scss/patterns/atoms/_buttons.scss */
-.button-orange:hover, .button-orange-block:hover {
+/* line 39, ../scss/patterns/atoms/_buttons.scss */
+.button-orange:hover, .button-orange-block:hover, .button-orange.active, .active.button-orange-block {
   background-color: #ffa131;
 }
 
-/* line 42, ../scss/patterns/atoms/_buttons.scss */
+/* line 47, ../scss/patterns/atoms/_buttons.scss */
 .button-group {
   display: table;
   table-layout: fixed;
 }
-/* line 46, ../scss/patterns/atoms/_buttons.scss */
+/* line 51, ../scss/patterns/atoms/_buttons.scss */
 .button-group-row {
   display: table-row;
 }
-/* line 50, ../scss/patterns/atoms/_buttons.scss */
+/* line 55, ../scss/patterns/atoms/_buttons.scss */
 .button-group .button, .button-group .button-block, .button-group .button-grey-block, .button-group .button-grey-dark-block, .button-group .button-grey-darker-block, .button-group .button-red-block, .button-group .button-blue-block, .button-group .button-lime-block, .button-group .button-purple-block, .button-group .button-pink-block, .button-group .button-orange-block, .button-group .button-grey, .button-group .button-grey-dark, .button-group .button-grey-darker, .button-group .button-red, .button-group .button-blue, .button-group .button-lime, .button-group .button-purple, .button-group .button-pink, .button-group .button-orange {
   display: table-cell;
 }
@@ -1043,7 +1052,7 @@ a {
   line-height: 1rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 9, ../scss/patterns/atoms/_list-styles.scss */
   .tags .tag {
     /* 3 */
@@ -1382,7 +1391,7 @@ footer .copyright {
   margin-bottom: 2.37037rem;
   /* 9 */
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 1, ../scss/patterns/organisms/_hero.scss */
   .hero {
     /* 3 */
@@ -1416,7 +1425,7 @@ footer .copyright {
 .hero .poster[href] {
   text-decoration: none;
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9375em) {
   /* line 10, ../scss/patterns/organisms/_hero.scss */
   .hero .poster {
     top: 0;
@@ -1436,7 +1445,7 @@ footer .copyright {
     margin: auto;
   }
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 10, ../scss/patterns/organisms/_hero.scss */
   .hero .poster {
     /* 3 */
@@ -1470,7 +1479,7 @@ footer .copyright {
   margin-right: 0;
   position: relative;
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event.scss */
   .event .details {
     /* 3 */
@@ -1517,7 +1526,7 @@ footer .copyright {
     border-bottom: 1px solid #27333d;
   }
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 8, ../scss/patterns/templates/_event.scss */
   .event .details {
     width: 31.42857%;
@@ -1614,7 +1623,7 @@ footer .copyright {
 .event .description p:last-of-type {
   margin-bottom: 0;
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 53, ../scss/patterns/templates/_event.scss */
   .event .description {
     width: 65.71429%;
@@ -1639,7 +1648,7 @@ footer .copyright {
   margin-top: 2.37037rem;
   /* 9 */
 }
-@media (min-width: 63.9375rem) {
+@media (min-width: 63.9375em) {
   /* line 69, ../scss/patterns/templates/_event.scss */
   .event .tags {
     /* 3 */
@@ -1654,7 +1663,7 @@ footer .copyright {
     /* 9 */
   }
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9375em) {
   /* line 78, ../scss/patterns/templates/_event.scss */
   .event .event-links {
     width: 100%;
@@ -1673,7 +1682,7 @@ footer .copyright {
     /* 9 */
   }
 }
-@media (min-width: 47.9375rem) {
+@media (min-width: 47.9375em) {
   /* line 78, ../scss/patterns/templates/_event.scss */
   .event .event-links {
     position: absolute;
@@ -1701,33 +1710,101 @@ footer .copyright {
   }
 }
 
-/* line 1, ../scss/patterns/templates/_event-grid.scss */
-.event-grid {
+/* line 3, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .grid {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 4, ../scss/patterns/templates/_event-grid.scss */
-.event-grid .mix {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+/* line 7, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .tile {
+  position: relative;
+  z-index: 5;
+  display: none;
+  margin-bottom: 2.85714%;
 }
-@media (min-width: 47.9375rem) {
-  /* line 4, ../scss/patterns/templates/_event-grid.scss */
-  .event-grid .mix {
+@media (max-width: 47.9375em) {
+  /* line 7, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 47.9375em) and (max-width: 63.9375em) {
+  /* line 7, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile {
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%;
   }
+  /* line 20, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile:nth-child(2n + 2) {
+    margin-right: 0;
+  }
 }
-@media (min-width: 63.9375rem) {
-  /* line 4, ../scss/patterns/templates/_event-grid.scss */
-  .event-grid .mix {
+@media (min-width: 63.9375em) and (max-width: 83.4375em) {
+  /* line 7, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile {
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%;
   }
+  /* line 28, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 83.4375em) {
+  /* line 7, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile {
+    width: 22.85714%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+  /* line 36, ../scss/patterns/templates/_event-tiles.scss */
+  .tiles .tile:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+}
+/* line 42, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .tile-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 18.96296px;
+  /* 9 */
+  padding: 1.18519rem;
+  /* 9 */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 50, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .tile-content * {
+  color: #ffffff;
+}
+/* line 54, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .tile-content h4 {
+  margin: 0;
+}
+/* line 58, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .tile-content time {
+  display: block;
+}
+/* line 62, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .tile-content small {
+  display: block;
+}
+/* line 68, ../scss/patterns/templates/_event-tiles.scss */
+.tiles .grid-filters fieldset {
+  display: inline-block;
+  border: none;
 }

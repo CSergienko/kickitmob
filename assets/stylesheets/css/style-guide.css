@@ -267,6 +267,11 @@ th {
 }
 
 /* line 3, ../scss/utils/_global.scss */
+body {
+  padding-top: 3.16049rem;
+}
+
+/* line 7, ../scss/utils/_global.scss */
 [role="main"] {
   max-width: 100%;
   margin-left: auto;
@@ -279,7 +284,7 @@ th {
   clear: both;
 }
 
-/* line 7, ../scss/utils/_global.scss */
+/* line 11, ../scss/utils/_global.scss */
 .content {
   padding-left: 2.37037rem;
   padding-right: 2.37037rem;

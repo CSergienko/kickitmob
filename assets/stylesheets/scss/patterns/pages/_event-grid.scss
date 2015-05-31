@@ -1,0 +1,133 @@
+.event-grid {
+
+    section.events {
+        @include container;
+
+        @include breakpoint($bp-medium) {
+            background-color: $grey-dark;
+            display: table-row;
+
+            .event-filters,
+            .event-tiles {
+                display: table-cell !important;
+                position: relative;
+                vertical-align: top;
+            }
+        }
+    }
+
+    #show-filters {
+        display: none;
+        visibility: none;
+    }
+
+    .js & {
+        #show-filters {
+            @include breakpoint((max-width $bp-medium)) {
+                display: block;
+                visibility: visible;
+                @include rem(margin, 0 auto);
+            }
+        }
+    }
+
+    .event-filters {
+        width: 100%;
+        position: relative;
+        @include gutterLeftRight;
+        @include gutterTopBottom;
+        background-color: $grey-dark;
+
+        @include breakpoint($bp-medium) {
+            width: 30%;
+        }
+
+        @include breakpoint($bp-large) {
+            width: 25%;
+        }
+
+        * {
+            color: $white;
+        }
+
+        fieldset {
+            border: none;
+            width: 100%;
+            padding: 0;
+            @include rem(margin-bottom, $spacer);
+
+            h3 {
+                @include rem(margin-bottom, $spacer / 3);
+            }
+        }
+
+        [type="checkbox"] {
+            display: none;
+
+            & + label {
+                @include span(12);
+                @include rem(margin-bottom, $spacer / 3);
+                display: block;
+
+                &:before {
+                    float: left;
+                    content: '';
+                    display: block;
+                    height: ms(1);
+                    width: ms(1);
+                    @include rem(margin-right, $spacer / 3);
+                    background-color: $white;
+                    border: 3px solid $white;
+                    border-radius: ms(1);
+                }
+            }
+
+            &:checked + label {
+                &:before {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    .event-tiles {
+        width: 100%;
+        @include gutterLeftRight;
+
+        @include breakpoint((max-width $bp-medium)) {
+            @include gutterTopBottom;
+        }
+
+        @include breakpoint($bp-medium) {
+            width: 70%;
+            @include rem(padding-bottom, $spacer);
+            
+            background-color: $white;
+        }
+
+        @include breakpoint($bp-large) {
+            width: 75%;
+        }
+    }
+
+    .error-message {
+        text-align: center;
+        height: 1.5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .event-sort {
+        width: 100%;
+        @include gutterLeftRight;
+        @include gutterTopBottom;
+
+        button {
+            width: 50%;
+        }
+    }
+}

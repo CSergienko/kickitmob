@@ -76,3 +76,13 @@
     background-image: url($image);
   }
 }
+
+@mixin gutterLeftRight() {
+    @include rem(padding-left, $spacer);
+    @include rem(padding-right, $spacer);
+}
+
+@mixin gutterTopBottom() {
+    @include rem(padding-top, $spacer);
+    @include rem(padding-bottom, $spacer);
+}

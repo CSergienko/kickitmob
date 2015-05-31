@@ -15,6 +15,10 @@
         width: 100%;
     }
 
+    &:focus {
+        outline: none;
+    }
+
     &[class*="icon-"] {
         @include rem(padding-left, ($spacer * 1.5));
         @include rem(background-size, ($spacer * 0.6));
@@ -32,7 +36,8 @@
                 @extend .button-#{$button};
             }
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: lighten($color, 5%);
             }
         }
