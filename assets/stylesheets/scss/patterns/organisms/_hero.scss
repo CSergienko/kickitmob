@@ -10,9 +10,11 @@
     .page-title {
         color: $white;
         @include font(ms(7));
-        margin: 0;
+        @include rem(height, ms(7));
+        margin: auto;
         position: absolute;
-        @include rem(bottom, $spacer);
+        bottom: 0;
+        top: 0;
         @include rem(left, $spacer);
     }
 

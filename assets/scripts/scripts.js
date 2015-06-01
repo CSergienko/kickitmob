@@ -173,14 +173,10 @@ $(document).ready(function() {
     // Toggle the event filters.
     
     function filterInit() {
-        /*if ( Modernizr.mq('only screen and (max-width: 767px)') ) {
-            
-        }*/
-
         $('.event-grid #filters').slideToggle('close');
-            $('.event-grid #show-filters').on('click', function() {
-                $('.event-grid #filters').slideToggle();
-            });
+        $('.event-grid #show-filters').on('click', function() {
+            $('.event-grid #filters').slideToggle();
+        });
     }
 
     filterInit();

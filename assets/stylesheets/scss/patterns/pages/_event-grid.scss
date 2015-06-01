@@ -1,7 +1,13 @@
 .event-grid {
 
+    .hero {
+        .banner {
+            @include rem(height, ms(9));
+        }
+    }
+
     section.events {
-        @include container;
+        @include span(12);
 
         @include breakpoint($bp-medium) {
             background-color: $grey-dark;
@@ -46,8 +52,12 @@
             width: 25%;
         }
 
-        * {
+        *:not([type="search"]) {
             color: $white;
+        }
+
+        .search {
+            @include gutterBottom;
         }
 
         fieldset {
@@ -99,11 +109,12 @@
     }
 
     .event-tiles {
+        @include container;
         width: 100%;
         @include gutterLeftRight;
 
         @include breakpoint((max-width $bp-medium)) {
-            @include gutterTopBottom;
+            @include gutterBottom;
         }
 
         @include breakpoint($bp-medium) {
@@ -120,18 +131,22 @@
 
     .error-message {
         text-align: center;
-        height: 1.5rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
+        
+        @include breakpoint($bp-medium) {
+            height: 1.5rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
     }
 
     .event-sort {
         width: 100%;
-        @include gutterLeftRight;
+        max-width: 50%;
+        margin: 0 auto;
         @include gutterTopBottom;
 
         button {

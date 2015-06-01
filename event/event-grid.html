@@ -28,7 +28,8 @@
         <header role="header">
             <a href="#" class="logo"></a>
             <nav role="nav">
-                <a href="#" class="download-app icon-store-google-play"></a>
+                <a href="#" role="menu-item">Events</a>
+                <a href="#" role="menu-item" class="download-app icon-store-google-play">&nbsp;</a>
             </nav>
         </header>
 
@@ -39,15 +40,17 @@
                 <h1 class="page-title">Events</h1>
             </section>
 
-            <!-- <div class="search">
-                <input id="search" type="search" placeholder="Search" form="filters">
-                <input type="submit" value ="Search" class="button-red" form="filters">
-            </div> -->
+            
 
             <section class="events">
                 
                 <button class="button-grey-dark" id="show-filters">Filter Events</button>
-                <form id="filters" class="event-filters">
+                <form id="filters" name="filters" class="event-filters">
+
+                    <div class="search">
+                        <input id="search" type="search" placeholder="Search">
+                        <input type="submit" value ="Search" class="button-blue">
+                    </div>
 
                     <h4>Filters <a href="#" id="reset-filters">Clear Filters</a></h4>
 
@@ -92,7 +95,7 @@
                     <div class="event-sort button-group">
                         <div class="button-group-row">
                             <button data-sort="date:desc" class="button-blue sort">Newest</button>
-                            <button data-sort="order:asc" class="button-blue sort">Upcoming</button>
+                            <button data-sort="order:asc" class="button-grey-dark sort">Upcoming</button>
                         </div>
                     </div>
 

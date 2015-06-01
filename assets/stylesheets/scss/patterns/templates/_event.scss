@@ -3,6 +3,8 @@
     .content {
         @include span(12);
         position: relative;
+        @include rem(padding-top, $spacer * 2);
+        @include rem(padding-bottom, $spacer);
     }
 
     .details {
@@ -84,7 +86,7 @@
 
         @include breakpoint($bp-medium) {
             position: absolute;
-            @include rem(top, -6.19rem);
+            @include rem(top, -1.4rem);
             right: $spacer;
             @include rem(width, 20rem);
         }

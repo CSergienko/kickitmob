@@ -86,3 +86,11 @@
     @include rem(padding-top, $spacer);
     @include rem(padding-bottom, $spacer);
 }
+
+@mixin gutterTop() {
+    @include rem(padding-top, $spacer);
+}
+
+@mixin gutterBottom() {
+    @include rem(padding-bottom, $spacer);
+}

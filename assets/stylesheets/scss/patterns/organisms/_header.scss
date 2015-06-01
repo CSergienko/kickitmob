@@ -30,14 +30,33 @@
         bottom: 0;
         height: 100%;
         width: span(6);
-        
-        .download-app {
-            display: block;
-            background-size: contain;
-            background-position: 50%;
+        text-align: right;
+
+        [role="menu-item"] {
+            display: inline-block;
             height: 100%;
-            @include rem(width, 6rem);
-            @include last;
+            line-height: 0.85;
+            @include rem(padding, $spacer / 2);
+            background-color: $grey-dark;
+            color: $white;
+            text-decoration: none;
+            @include rem(margin-left, -0.25rem);
+
+            &.active {
+                background-color: $blue;
+            }
+
+            &.download-app {
+                background-size: contain;
+                background-position: 50%;
+                background-color: transparent;
+                @include rem(width, 6rem);
+                @include rem(margin-left, 1rem);
+            }
         }
+        
+        
     }
+
+    
 }

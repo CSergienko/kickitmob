@@ -1,0 +1,27 @@
+.search {
+    @include span(12);
+
+    [type="search"],
+    [type="submit"] {
+        @include rem(height, ms(3));
+    }
+
+    [type="search"] {
+        @include span(70% no-gutter);
+        border: 2px solid $blue;
+        @include rem(padding, 0 1rem);
+        font-weight: $bold;
+        color: $blue;
+        box-sizing: border-box;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    [type="submit"] {
+        @include span(30% no-gutter);
+        @include rem(padding, 0.5rem);
+        @include last;
+    }
+}

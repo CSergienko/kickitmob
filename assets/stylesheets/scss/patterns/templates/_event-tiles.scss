@@ -1,7 +1,12 @@
 .event-tiles {
+    position: relative;
 
     .grid {
         @include span(12);
+
+        @include breakpoint($bp-medium / 1.5) {
+            @include rem(margin-top, -($spacer / 3));
+        }
     }
 
     .tile {
@@ -9,21 +14,19 @@
         z-index: 5;
         display: none;
         overflow: hidden;
-        padding: $spacer / 3;
         float: left;
-
-        .tile-content {
-            bottom: $spacer / 3;
-            left: $spacer / 3;
-            right: $spacer / 3;
-        }
         
         @include breakpoint((max-width $bp-medium / 1.5)) {
             width: 100%;
+            margin-bottom: gutter();
         }
 
         @include breakpoint(($bp-medium / 1.5) $bp-large) {
             width: 50%;
+        }
+
+        @include breakpoint($bp-medium / 1.5) {
+            @include rem(padding, $spacer / 3);
         }
 
         @include breakpoint($bp-large) {
@@ -38,6 +41,12 @@
         left: 0;
         @include rem(padding, $spacer / 2);
         background-color: rgba(0, 0, 0, 0.8);
+
+        @include breakpoint($bp-medium / 1.5) {
+            @include rem(left, $spacer / 3);
+            @include rem(bottom, $spacer / 3);
+            @include rem(right, $spacer / 3);
+        }
 
         * {
             color: $white;
