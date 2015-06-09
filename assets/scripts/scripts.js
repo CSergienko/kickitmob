@@ -175,7 +175,17 @@ $(document).ready(function() {
     function filterInit() {
         $('.event-grid #filters').slideToggle('close');
         $('.event-grid #show-filters').on('click', function() {
-            $('.event-grid #filters').slideToggle();
+            
+            if (Modernizr.mq('(max-width: 47.9375em)')) {
+                $('.event-grid #filters')
+                    .slideToggle()
+                    .css({
+                        'display': 'block'
+                    });
+            } else {
+                $('.event-grid #filters').slideToggle();
+            }
+
         });
     }
 

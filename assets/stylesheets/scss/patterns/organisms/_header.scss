@@ -1,5 +1,6 @@
 [role="header"] {
     @include span(12 no-gutter);
+    display: table;
     @include rem(height, $header-height);
     position: fixed;
     top: 0;
@@ -7,43 +8,32 @@
     right: 0;
     background-color: $grey-darker;
     z-index: 20;
+    @include rem(padding, 0 ms(0) 0 ms(0));
 
     .logo {
-        position: absolute;
-        @include rem(top, 0.5rem);
-        @include rem(bottom, 0.5rem);
-        @include rem(left, 1rem);
-    }
-
-    .social {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
+        display: table-cell;
+        @include rem(width, 6rem);
+        @include rem(height, $header-height);
+        background-size: contain;
+        background-position: 50%;
     }
 
     [role="nav"] {
-        position: absolute;
-        top: 0;
-        @include rem(right, 1rem);
-        bottom: 0;
-        height: 100%;
-        width: span(6);
-        text-align: right;
+        display: table-cell;
+        @include rem(height, $header-height);
+        padding-left: 20px;
 
         [role="menu-item"] {
             display: inline-block;
-            height: 100%;
+            @include rem(height, $header-height);
             line-height: 0.85;
             @include rem(padding, $spacer / 2);
-            background-color: $grey-dark;
             color: $white;
             text-decoration: none;
-            @include rem(margin-left, -0.25rem);
+            text-transform: lowercase;
 
             &.active {
-                background-color: $blue;
+                color: $blue;
             }
 
             &.download-app {
@@ -52,11 +42,8 @@
                 background-color: transparent;
                 @include rem(width, 6rem);
                 @include rem(margin-left, 1rem);
+                float: right;
             }
-        }
-        
-        
+        }   
     }
-
-    
 }

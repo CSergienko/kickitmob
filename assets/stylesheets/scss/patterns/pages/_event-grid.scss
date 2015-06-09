@@ -32,17 +32,25 @@
             @include breakpoint((max-width $bp-medium)) {
                 display: block;
                 visibility: visible;
-                @include rem(margin, 0 auto);
+                @include rem(margin, (-1.5rem) auto 0 auto);
+                @include rem(width, 7.5rem);
+                position: absolute;
+                left: 0;
+                right: 0;
+                z-index: 2;
             }
         }
     }
 
     .event-filters {
-        width: 100%;
         position: relative;
         @include gutterLeftRight;
         @include gutterTopBottom;
         background-color: $grey-dark;
+
+        @include breakpoint((max-width $bp-medium)) {
+            width: 100% !important;
+        }
 
         @include breakpoint($bp-medium) {
             width: 30%;
@@ -57,7 +65,9 @@
         }
 
         .search {
-            @include gutterBottom;
+            border-bottom: 1px solid lighten($grey-dark, 5%);
+            @include rem(padding-bottom, $spacer / 2);
+            @include rem(margin-bottom, $spacer / 2);
         }
 
         fieldset {
@@ -72,7 +82,7 @@
         }
 
         #reset-filters {
-            color: $red;
+            color: $blue;
             float: right;
             @include rem(font-size, ms(0));
             line-height: inherit;
@@ -111,7 +121,8 @@
     .event-tiles {
         @include container;
         width: 100%;
-        @include gutterLeftRight;
+        @include rem(padding-left, $spacer / 3);
+        @include rem(padding-right, $spacer / 3);
 
         @include breakpoint((max-width $bp-medium)) {
             @include gutterBottom;
@@ -120,6 +131,7 @@
         @include breakpoint($bp-medium) {
             width: 70%;
             @include rem(padding-bottom, $spacer);
+            @include gutterLeftRight;
             
             background-color: $white;
         }
@@ -151,6 +163,12 @@
 
         button {
             width: 50%;
+        }
+    }
+
+    .button-grey-dark.sort {
+        &.active {
+            @extend .button-blue;
         }
     }
 }
