@@ -159,14 +159,14 @@ $(document).ready(function() {
             },
             callbacks: {
                 onMixFail: function(){
-                    $('.error-message').text('No events were found matching the selected filters.');
+                    $('.error-message').text('No events found.');
                 },
                 onMixStart: function() {
                     $('.error-message').text('');
                 }
             },
             load: {
-                sort: 'date:desc'
+                sort: 'order:desc'
             }
         });
 

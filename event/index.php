@@ -143,16 +143,16 @@ $share_img = "http://kickitmob.com/android/events/images/default.jpg";
             
             <ul class="social">
                 <li class="facebook">
-                    <a href="#"></a>
+                    <a href="http://facebook.com/kickitmob"></a>
                 </li>
                 <li class="twitter">
-                    <a href="#"></a>
+                    <a href="http://twitter.com/kickitmob"></a>
                 </li>
                 <li class="google-plus">
-                    <a href="#"></a>
+                    <a href="https://plus.google.com/117441542288770421944/posts"></a>
                 </li>
                 <li class="instagram">
-                    <a href="#"></a>
+                    <a href="http://instagram.com/kickitmob"></a>
                 </li>
             </ul>
 
