@@ -47,11 +47,6 @@
                 <button class="button-green icon-menu" id="show-filters">Filters</button>
                 <form id="filters" name="filters" class="event-filters">
 
-                    <div class="search">
-                        <input id="search" type="search" placeholder="Search">
-                        <input type="submit" value ="Search" class="button-blue">
-                    </div>
-
                     <h4>Filters <a href="#" id="reset-filters">Clear Filters</a></h4>
 
                     <fieldset>
@@ -97,7 +92,12 @@
                             <button data-sort="order:desc" class="button-grey-dark sort">Newest</button>
                             <button data-sort="date:asc" class="button-grey-dark sort">Upcoming</button>
                         </div>
+                            
                     </div>
+                    <form action="" method="get" class="search">
+                        <input id="search" type="search" placeholder="Search" name="search">
+                        <input type="submit" value ="Search" class="button-blue">
+                    </form>
 
                     <div class="error-message"></div>
                     <div class="grid">
